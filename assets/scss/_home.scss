@@ -1,0 +1,21 @@
+.home-section{
+    .home-area{
+        padding-top: 355px;
+        padding-bottom: 344px;
+
+        .home-area-content{
+            h6{
+                font-size: 18px;
+                color: var(--primary-color);
+            }
+            h1{
+                font-size: 60px;
+            }
+
+            .home-btn a{
+                color: var(--white);
+            }
+        }
+    }
+
+}

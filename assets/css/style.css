@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+:root {
+  --primary-color:#D9832E;
+  --white-color:#fff;
+  --gray-light-color:#EAEDF2;
+  --gray-color:#616161;
+  --dark-color:#000;
+  --dark-color-2:#111111;
+  --dark-color-light:#1f1f1f;
+  --h1-fs:60px;
+  --h2-fs:35px;
+  --h3-fs:30px;
+  --h4-fs:20px;
+  --h5-fs:18px;
+  --h6-fs:14px;
+  --ragular-f:15px;
+  --medium-f:16px;
+  --small-f:14px;
+  --smaller-f:12px;
+  --light-fw:300;
+  --ragular-fw:400;
+  --medium-fw:500;
+  --bold-fw:700;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: var(--white-color);
+  background-color: var(--dark-color-light);
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c-primary {
+  color: var(--primary-color);
+}
+
+.header-left {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+.header-left .brand-logo {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 5px 20px;
+}
+.header-left .brand-logo a {
+  color: var(--white-color);
+}
+.header-left .header-left-menu ul li {
+  text-align: center;
+  margin: 10px 0;
+  padding-bottom: 10px;
+  position: relative;
+}
+.header-left .header-left-menu ul li a {
+  font-size: var(--smaller-f);
+  font-weight: var(--medium-fw);
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.header-left .header-left-menu ul li a svg {
+  font-size: 20px;
+  border: 2px solid var(--primary-color);
+  padding: 5px;
+  border-radius: 50px;
+  color: var(--primary-color);
+  z-index: 9;
+}
+.header-left .header-left-menu ul li a .header-left-list-name {
+  position: absolute;
+  top: 1px;
+  left: 25px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
+  box-shadow: 0 2px 8px var(--primary-color);
+  padding: 7px 10px 7px 45px;
+  z-index: -1;
+  display: none;
+}
+.header-left .header-left-menu ul li:hover a svg {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  transition: 0.3s;
+  z-index: 999;
+  box-shadow: 0 2px 8px var(--primary-color);
+  border: 2px solid var(--white-color);
+}
+.header-left .header-left-menu ul li:hover a .header-left-list-name {
+  display: block;
+}
+.header-left .header-left-menu ul li:active a {
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+
+.home-section .home-area {
+  padding-top: 355px;
+  padding-bottom: 344px;
+}
+.home-section .home-area .home-area-content h6 {
+  font-size: 18px;
+  color: var(--primary-color);
+}
+.home-section .home-area .home-area-content h1 {
+  font-size: 60px;
+}
+.home-section .home-area .home-area-content .home-btn a {
+  color: var(--white);
+}
+
+/*# sourceMappingURL=style.css.map */
