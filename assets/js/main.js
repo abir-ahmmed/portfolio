@@ -140,9 +140,9 @@ sr.reveal('.popular__card', {interval: 100})
 
 
 // 3D
-$('.carousel-demo').jR3DCarousel({
-    width : 600,        
-    height: 450,    
-    slides: slides,
-    animation: "slide3D"
-  });
+jQuery(document).ready(function($) {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+});
