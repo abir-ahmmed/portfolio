@@ -137,3 +137,12 @@ sr.reveal('.home__data', {origin:'bottom'})
 sr.reveal('.about__data, .recently__data', {origin:'left'})
 sr.reveal('.about__img, .recently__img', {origin:'right'})
 sr.reveal('.popular__card', {interval: 100})
+
+
+// 3D
+$('.carousel-demo').jR3DCarousel({
+    width : 600,        
+    height: 450,    
+    slides: slides,
+    animation: "slide3D"
+  });

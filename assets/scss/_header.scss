@@ -3,11 +3,14 @@
     top: 0;
     bottom: 0;
     .brand-logo{
-        background-color: var(--primary-color);
+        background-color: var(--theme-color);
         text-align: center;
-        padding: 5px 20px;
+        padding: 10px 20px;
+        margin-bottom: 30px;
+        
         a{
             color: var(--white-color);
+            font-weight: 700;
         }
     }
 
@@ -23,13 +26,13 @@
                     font-size: var(--smaller-f);
                     font-weight: var(--medium-fw);
                     text-transform: uppercase;
-                    color: var(--primary-color);
+                    color: var(--theme-color);
                     svg{
                         font-size: 20px;
-                        border: 2px solid var(--primary-color);
+                        border: 2px solid var(--theme-color);
                         padding: 5px;
                         border-radius: 50px;
-                        color: var(--primary-color);
+                        color: var(--theme-color);
                         z-index: 9;
                         
                     }
@@ -38,9 +41,9 @@
                         position: absolute;
                         top: 1px;
                         left: 25px;
-                        border: 2px solid var(--primary-color);
+                        border: 2px solid var(--theme-color);
                         border-radius: 50px;
-                        box-shadow: 0 2px 8px var(--primary-color);
+                        box-shadow: 0 2px 8px var(--theme-color);
                         padding: 7px 10px 7px 45px;
                         z-index: -1;
                         display: none;
@@ -48,18 +51,18 @@
                 }
             }
             li:hover a svg{
-                background-color: var(--primary-color);
+                background-color: var(--theme-color);
                 color: var(--white-color);
                 transition: .3s;
                 z-index: 999;
-                box-shadow: 0 2px 8px var(--primary-color);
+                box-shadow: 0 2px 8px var(--theme-color);
                 border: 2px solid var(--white-color);
             }
             li:hover a .header-left-list-name{
                 display: block;
             }
             li:active a{
-                color: var(--primary-color);
+                color: var(--theme-color);
                 transition: .3s;
             }
             

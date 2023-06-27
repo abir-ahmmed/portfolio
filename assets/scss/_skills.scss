@@ -1,0 +1,32 @@
+.skills {
+    background: #111;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &-tools{
+        &-box{
+
+            border: 2px solid gray;
+            margin: 5px;
+            display: inline-block;
+            padding: 50px;
+            border-radius: 48%;
+            &-icon{
+                & svg{
+                    font-size: 80px;
+                }
+            }
+
+            &-number{
+                font-size: 36px;
+            }
+
+
+        }
+
+        &-box:hover{
+            border: 2px solid var(--theme-color);
+            color: var(--theme-color);
+        }
+    }
+  }
