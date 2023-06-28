@@ -86,21 +86,7 @@ const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dar
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line'
 
 // We validate if the user previously chose a topic
-if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
-}
 
-// Activate / deactivate the theme manually with the button
-themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme
-    document.body.classList.toggle(darkTheme)
-    themeButton.classList.toggle(iconTheme)
-    // We save the theme and the current icon that the user chose
-    localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.setItem('selected-icon', getCurrentIcon())
-})
 
 
 /*==============SCROLL REVEAL ANIMATION=============*/
@@ -121,9 +107,27 @@ sr.reveal('.popular__card', {interval: 100})
 
 
 // 3D
-jQuery(document).ready(function($) {
-    $('.counter').counterUp({
-        delay: 10,
-        time: 1000
-    });
-});
+$(window).on("load resize",function() {
+
+    var counters = $(".count");
+    var countersQuantity = counters.length;
+    var counter = [];
+  
+    for (i = 0; i < countersQuantity; i++) {
+      counter[i] = parseInt(counters[i].innerHTML);
+    }
+  
+    var count = function(start, value, id) {
+      var localStart = start;
+      setInterval(function() {
+        if (localStart < value) {
+          localStart++;
+          counters[id].innerHTML = localStart;
+        }
+      }, 4);
+    }
+  
+    for (j = 0; j < countersQuantity; j++) {
+      count(0, counter[j], j);
+    }
+  });

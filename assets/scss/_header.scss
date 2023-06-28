@@ -69,3 +69,15 @@
         }
     }
 }
+
+.header-left-2{
+    .header-left-menu{
+        ul{
+            display: flex;
+            margin-right: 30px;
+            li{
+                display: inline-block;
+            }
+        }
+    }
+}
