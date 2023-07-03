@@ -58,7 +58,7 @@ ul {
   }
 }
 .c-primary {
-  color: var(--theme-color);
+  color: #24E98C;
 }
 
 .th-btn {
@@ -88,7 +88,7 @@ ul {
 }
 
 .th-color {
-  color: var(--theme-color);
+  color: #24E98C;
 }
 
 .sub-title {
@@ -307,6 +307,18 @@ ul {
 .services-2 {
   padding-top: 80px;
   padding-bottom: 80px;
+}
+
+.testimonial-2-slider-box-authore {
+  display: flex;
+  margin-bottom: 30px;
+}
+.testimonial-2-slider-box-authore img {
+  width: 70%;
+  border-radius: 50%;
+}
+.testimonial-2-slider-box-authore-text {
+  margin-top: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

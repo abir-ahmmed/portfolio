@@ -1,0 +1,21 @@
+.testimonial{}
+
+.testimonial-2{
+    &-slider{
+        &-box{
+            &-authore{
+                display: flex;
+                margin-bottom: 30px;
+                img{
+                    width: 70%;
+                    border-radius: 50%;
+                }
+                
+
+                &-text{
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
