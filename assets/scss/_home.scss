@@ -25,35 +25,35 @@
             }
         }
     }
-    .home-area-2{
-        background-image: url(../img/1.jpg);
-        background-size: cover;
+   
+    
+}
+.intro-area-2{
+    background-image: url(../img/1.jpg);
+    background-size: cover; 
+    padding-top: 260px;
+    padding-bottom: 260px;
+
+    .intro-area-content{
         
-        padding-top: 260px;
-        padding-bottom: 260px;
+        h1{
+            font-size: 60px;
+        }
 
-        .home-area-content{
-            
-            h1{
-                font-size: 60px;
-            }
+        p{
+            width: 90%;
+            color: #f1f1f1;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
 
-            p{
-                width: 90%;
-                color: #f1f1f1;
-                margin-top: 40px;
-                margin-bottom: 40px;
-            }
+        .intro-btn a{
+             color: var(--white);
+             
+        }
 
-            .home-btn a{
-                 color: var(--white);
-                 
-            }
-
-            .work-btn{
-                margin-right: 30px;
-            }
+        .work-btn{
+            margin-right: 30px;
         }
     }
-
 }

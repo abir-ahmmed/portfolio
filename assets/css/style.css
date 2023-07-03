@@ -42,6 +42,21 @@ ul {
   padding: 0;
 }
 
+.typing-heading {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #212121;
+  animation: cursor 1s step-start infinite, text-style 5s steps(18) alternate infinite;
+}
+
+@keyframes text-style {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 21.5ch;
+  }
+}
 .c-primary {
   color: var(--theme-color);
 }
@@ -76,10 +91,18 @@ ul {
   color: var(--theme-color);
 }
 
+.sub-title {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-bottom: 30px;
+}
+
 .header-left {
   position: fixed;
   top: 0;
   bottom: 0;
+  z-index: 999;
 }
 .header-left .brand-logo {
   background-color: var(--theme-color);
@@ -194,25 +217,26 @@ ul {
 .home-section .home-area .home-area-content .home-btn a {
   color: var(--white);
 }
-.home-section .home-area-2 {
+
+.intro-area-2 {
   background-image: url(../img/1.jpg);
   background-size: cover;
   padding-top: 260px;
   padding-bottom: 260px;
 }
-.home-section .home-area-2 .home-area-content h1 {
+.intro-area-2 .intro-area-content h1 {
   font-size: 60px;
 }
-.home-section .home-area-2 .home-area-content p {
+.intro-area-2 .intro-area-content p {
   width: 90%;
   color: #f1f1f1;
   margin-top: 40px;
   margin-bottom: 40px;
 }
-.home-section .home-area-2 .home-area-content .home-btn a {
+.intro-area-2 .intro-area-content .intro-btn a {
   color: var(--white);
 }
-.home-section .home-area-2 .home-area-content .work-btn {
+.intro-area-2 .intro-area-content .work-btn {
   margin-right: 30px;
 }
 
@@ -244,6 +268,17 @@ ul {
   transform: scale(1.05);
   border: 10px solid var(--theme-color);
   transition: transform 0.2s;
+}
+.about-2-content h4 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.about-2-content h6 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.about-2-content p {
+  width: 70%;
 }
 
 .skills {

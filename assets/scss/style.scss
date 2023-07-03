@@ -49,6 +49,26 @@ ul{
     padding: 0;
 }
 
+.typing-heading{
+    
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 4px solid #212121;
+	animation: cursor 1s step-start infinite, 
+    text-style 5s steps(18) alternate infinite;
+}
+
+
+@keyframes text-style {
+	0% { 
+    width: 0; 
+  }
+	100% { 
+    width: 21.5ch; 
+  }
+}
+
+
 .c-primary{
     color: var(--theme-color)
 }
@@ -84,6 +104,13 @@ ul{
 
 .th-color{
     color: var(--theme-color)
+}
+
+.sub-title{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 30px;
 }
 
 .dark-theme{
