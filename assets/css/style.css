@@ -82,6 +82,17 @@ ul {
   text-transform: uppercase;
 }
 
+.th-slider {
+  font-size: 18px;
+  color: var(--white-color);
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: inline-block;
+  box-shadow: 0 2px 8px var(--theme-color);
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
 .th-title:hover {
   background: var(--theme-color);
   color: var(--white-color);
@@ -309,6 +320,12 @@ ul {
   padding-bottom: 80px;
 }
 
+.testimonial-2-slider {
+  display: flex;
+}
+.testimonial-2-slider-item {
+  padding: 30px;
+}
 .testimonial-2-slider-box-authore {
   display: flex;
   margin-bottom: 30px;
@@ -319,6 +336,21 @@ ul {
 }
 .testimonial-2-slider-box-authore-text {
   margin-top: 15px;
+}
+.testimonial-2-slider-box-authore-text h5 {
+  font-size: 16px;
+}
+.testimonial-2-slider-box-authore-text p {
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.testimonial-2-slider-box-text {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.testimonial-2-slider-box h6.testimonial-2-slider-sub-title {
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */

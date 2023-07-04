@@ -2,6 +2,11 @@
 
 .testimonial-2{
     &-slider{
+        display: flex;
+       
+        &-item{
+            padding: 30px;  
+        }
         &-box{
             &-authore{
                 display: flex;
@@ -14,7 +19,24 @@
 
                 &-text{
                     margin-top: 15px;
+                    h5{
+                        font-size: 16px;
+                    }
+                    p{
+                        font-size: 12px;
+                        text-transform: capitalize;
+                    }
                 }
+            }
+
+            &-text{
+                font-size: 20px;
+                font-weight: 400;
+                margin-bottom: 30px;
+            }
+
+            h6.testimonial-2-slider-sub-title{
+                font-size: 14px;
             }
         }
     }
