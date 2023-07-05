@@ -173,3 +173,10 @@ $(window).on("load resize",function() {
       // instead of a settings object
     ]
   });
+
+  // Skills Bar
+  $(".skills-progress-bar").each(function(){
+    $(this).find(".skills-progress-bar-inner").animate({
+      width: $(this).attr("data-width")
+    },2000)
+  });
