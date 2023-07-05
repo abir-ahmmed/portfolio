@@ -141,6 +141,9 @@ $(window).on("load resize",function() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    // pagination: {
+    //   el: ".testimonial-2-slider-pagination",
+    // },
     responsive: [
       {
         breakpoint: 1024,

@@ -2,12 +2,15 @@
 
 :root{
     --theme-color:#D9832E;
+    --theme-color-2:#24E98C;
     --white-color:#fff;
     --gray-light-color:#EAEDF2;
     --gray-color:#616161;
     --dark-color:#000;
     --dark-color-2:#111111;
+    --dark-color-3:#222;
     --dark-color-light:#1f1f1f;
+
 
 
     --h1-fs:60px;
@@ -114,7 +117,7 @@ ul{
   }
 
 .th-color{
-    color: #24E98C;
+    color: var(--theme-color-2);
 }
 
 .sub-title{
@@ -122,6 +125,15 @@ ul{
     text-transform: uppercase;
     letter-spacing: 6px;
     margin-bottom: 30px;
+}
+
+button.slick-next.slick-arrow {
+    display: none;
+}
+
+.slick-next.slick-arrow,
+.slick-prev.slick-arrow{
+    display: none !important;
 }
 
 .dark-theme{
