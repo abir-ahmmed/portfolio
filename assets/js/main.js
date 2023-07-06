@@ -180,3 +180,6 @@ $(window).on("load resize",function() {
       width: $(this).attr("data-width")
     },2000)
   });
+
+  // theme-color change
+  

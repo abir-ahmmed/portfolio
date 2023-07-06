@@ -457,13 +457,8 @@ button.slick-next.slick-arrow {
   font-size: 14px;
 }
 
-.pricing-2 {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-color: var(--gray-color);
-}
-
 footer .footer-area {
+  background-color: var(--dark-color);
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -486,10 +481,20 @@ footer .footer-area-top-logo {
   font-size: 14px;
   letter-spacing: 3px;
 }
+footer .footer-area-top-wedget {
+  text-align: center;
+}
 footer .footer-area-top-wedget-title {
+  text-align: center;
   font-size: 16px;
   color: var(--theme-color);
   margin-bottom: 20px;
+}
+footer .footer-area-top-wedget li {
+  margin-bottom: 5px;
+}
+footer .footer-area-top .footer-icon {
+  text-align: center;
 }
 footer .footer-area-top .footer-icon svg {
   padding-right: 10px;
