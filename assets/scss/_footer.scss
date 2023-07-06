@@ -1,0 +1,54 @@
+footer{
+    .footer-area{
+        padding-top: 80px;
+        padding-bottom: 80px;
+        a:hover{
+            color: var(--theme-color);
+        }
+
+        &-top{
+            display: flex;
+            &-text{
+                width: 70%;
+                text-align: justify;
+            }
+            &-logo{
+                background-color: var(--theme-color);
+                text-align: center;
+                padding: 5px 10px;
+                margin-bottom: 20px;
+                width: 150px;
+                font-size: 14px;
+                letter-spacing: 3px;
+            }
+            &-wedget{
+                &-title{
+                    font-size: 16px;
+                    color: var(--theme-color);
+                    margin-bottom: 20px;
+                }
+            }
+            .footer-icon{
+                svg{
+                    padding-right: 10px;
+                }
+    
+                a:hover{
+                    color: var(--theme-color);
+                }
+            }
+        }
+        &-bottom{
+            margin-top: 20px;
+            
+            display: flex;
+            .terms-privacy{
+                 float: right;
+                 li{
+                    display: inline-block;
+                    padding-right: 30px;
+                 }
+            }
+        }
+    }
+}
