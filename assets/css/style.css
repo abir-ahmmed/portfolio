@@ -142,6 +142,10 @@ button.slick-next.slick-arrow {
   padding-bottom: 10px;
   position: relative;
 }
+.header-left .header-left-menu ul li .header-left-drop-down {
+  position: absolute;
+  left: 450px;
+}
 .header-left .header-left-menu ul li a {
   font-size: var(--smaller-f);
   font-weight: var(--medium-fw);
@@ -283,6 +287,19 @@ button.slick-next.slick-arrow {
 }
 .intro-area-2 .intro-area-content .work-btn {
   margin-right: 30px;
+}
+
+.home-area-3 {
+  display: inline-block;
+  transform: translateY(200px);
+}
+.home-area-3 .ball {
+  background: #FFFFFF;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: 45px;
+  left: 10px;
 }
 
 .about-2 {

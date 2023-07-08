@@ -24,6 +24,11 @@
                 margin: 10px 0;
                 padding-bottom: 10px;
                 position: relative;
+
+                .header-left-drop-down{
+                    position: absolute;
+                    left: 450px;
+                }
               
                 a{
                     font-size: var(--smaller-f);
@@ -135,9 +140,7 @@
                         
                     }
 
-                    // ul:hover{
-                    //     background-color: var(--theme-color-2);
-                    // }
+                    
                     
 
                 }
