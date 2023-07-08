@@ -183,7 +183,7 @@ button.slick-next.slick-arrow {
   transition: 0.3s;
 }
 
-.header-left-2 {
+.header-2 {
   position: fixed;
   margin: 0 auto;
   left: 0;
@@ -191,7 +191,7 @@ button.slick-next.slick-arrow {
   background-color: #111;
   z-index: 999;
 }
-.header-left-2 .brand-logo {
+.header-2 .brand-logo {
   background-color: var(--theme-color);
   text-align: center;
   padding: 10px 5px;
@@ -200,25 +200,46 @@ button.slick-next.slick-arrow {
   border-radius: 10px;
   letter-spacing: 3px;
 }
-.header-left-2 .brand-logo a {
+.header-2 .brand-logo a {
   color: var(--white-color);
   font-weight: 500;
 }
-.header-left-2-menu {
+.header-2-menu {
   display: flex;
 }
-.header-left-2-menu ul {
+.header-2-menu ul {
   display: flex;
 }
-.header-left-2-menu ul li {
+.header-2-menu ul li {
+  position: relative;
   margin: 30px 20px;
 }
-.header-left-2-menu ul li a {
+.header-2-menu ul li a {
   display: ruby;
   text-transform: uppercase;
 }
-.header-left-2-menu ul li a:hover {
+.header-2-menu ul li a:hover {
   color: var(--theme-color);
+}
+.header-2-menu ul li .header-2-item-drop-down ul {
+  position: absolute;
+  display: grid;
+  background-color: var(--theme-color);
+  margin: 0;
+  padding: 0;
+  left: -5px;
+  display: none;
+}
+.header-2-menu ul li .header-2-item-drop-down ul li {
+  margin-bottom: 10px;
+  padding-bottom: 0;
+  margin-top: 0;
+}
+.header-2-menu ul li .header-2-item-drop-down ul li a:hover {
+  color: var(--theme-color-2);
+}
+.header-2-menu ul li:hover .header-2-item-drop-down ul {
+  display: block;
 }
 
 .home-section .home-area {
