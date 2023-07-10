@@ -140,6 +140,17 @@ button.slick-next.slick-arrow {
 
 }
 
+.ms-section{
+    font-size: 14em;
+    color: black;
+    padding: 10%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+
+
+
 
 
 
@@ -152,5 +163,6 @@ button.slick-next.slick-arrow {
 @import "testimonial";
 @import "pricing";
 @import "clients";
+@import "multiscroll";
 @import "footer";
 
