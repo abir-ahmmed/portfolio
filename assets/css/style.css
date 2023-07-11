@@ -120,15 +120,6 @@ button.slick-next.slick-arrow {
   display: none !important;
 }
 
-.ms-section {
-  font-size: 14em;
-  color: black;
-  padding: 10%;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-}
-
 .header-left {
   position: fixed;
   top: 0;
@@ -225,11 +216,12 @@ button.slick-next.slick-arrow {
 }
 .header-2-menu ul li {
   position: relative;
-  margin: 30px 20px;
+  padding: 30px 20px;
 }
 .header-2-menu ul li a {
   display: ruby;
   text-transform: uppercase;
+  font-weight: 400;
 }
 .header-2-menu ul li a:hover {
   color: var(--theme-color);
@@ -240,8 +232,8 @@ button.slick-next.slick-arrow {
   background-color: var(--theme-color);
   margin: 0;
   padding: 0;
-  left: -5px;
-  display: none;
+  left: px;
+  display: block;
 }
 .header-2-menu ul li .header-2-item-drop-down ul li {
   margin-bottom: 10px;
@@ -250,6 +242,7 @@ button.slick-next.slick-arrow {
 }
 .header-2-menu ul li .header-2-item-drop-down ul li a:hover {
   color: var(--theme-color-2);
+  font-weight: 400;
 }
 .header-2-menu ul li:hover .header-2-item-drop-down ul {
   display: block;
@@ -547,7 +540,7 @@ button.slick-next.slick-arrow {
   border: 15px solid var(--theme-color);
 }
 .about-3-img img {
-  width: 60%;
+  width: 100%;
 }
 .about-3-img-2 {
   display: none;
@@ -585,7 +578,6 @@ button.slick-next.slick-arrow {
 }
 
 .skills-2 {
-  background: #111;
   padding-top: 80px;
   padding-bottom: 80px;
   padding-left: 216px;
