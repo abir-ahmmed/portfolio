@@ -184,6 +184,12 @@ $(window).on("load resize",function() {
     },2000)
   });
 
+  $(".skills-2-progress-2-bar").each(function(){
+    $(this).find(".skills-2-progress-2-bar-inner").animate({
+      width: $(this).attr("data-width")
+    },2000)
+  });
+
   // theme-color change
  
 

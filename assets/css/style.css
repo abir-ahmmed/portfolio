@@ -233,7 +233,7 @@ button.slick-next.slick-arrow {
   margin: 0;
   padding: 0;
   left: px;
-  display: block;
+  display: none;
 }
 .header-2-menu ul li .header-2-item-drop-down ul li {
   margin-bottom: 10px;
@@ -581,7 +581,6 @@ button.slick-next.slick-arrow {
   padding-top: 80px;
   padding-bottom: 80px;
   padding-left: 216px;
-  padding-right: 216px;
 }
 .skills-2-progress-2-title {
   text-transform: uppercase;
@@ -700,6 +699,16 @@ button.slick-next.slick-arrow {
   background-color: var(--theme-color-2);
 }
 
+.th-title-2 {
+  font-size: 18px;
+  color: var(--theme-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  box-shadow: 0 2px 8px var(--theme-color);
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
 footer .footer-area {
   background-color: var(--dark-color);
   padding-top: 80px;

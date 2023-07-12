@@ -100,7 +100,7 @@
     padding-top: 80px;
     padding-bottom: 80px;
     padding-left: 216px;
-    padding-right: 216px;
+    
 
     &-progress-2{
 
@@ -253,4 +253,20 @@
         background-color: var(--theme-color-2);
         
     }
+}
+
+.th-title-2{
+    font-size: 18px;
+    color: var(--theme-color); 
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: 0 2px 8px var(--theme-color);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
+    svg{
+        // color: var(--theme-color-2);
+    }
+    
 }
