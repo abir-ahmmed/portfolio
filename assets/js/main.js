@@ -174,6 +174,12 @@ $(window).on("load resize",function() {
     ]
   });
 
+
+  // Home Slider
+  $(document).ready(function(){
+    $('.main-area-slider').slick({
+    });
+  });
 // Slider Swiper
 
 
@@ -241,3 +247,18 @@ $('#myContainer').multiscroll({
   }
 
 });
+
+// animation
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach((entries)=>{
+    console.log(entry)
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }else{
+        entry.target.classList.remove('show')
+    };
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));

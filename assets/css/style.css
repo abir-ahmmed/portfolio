@@ -120,6 +120,29 @@ button.slick-next.slick-arrow {
   display: none !important;
 }
 
+.skills,
+.services-2,
+.testimonial-2,
+.about-2,
+.intro-area,
+.intro-area-2 {
+  display: grid;
+  place-items: center;
+  align-items: center;
+}
+
+.th-title-3 {
+  font-size: 18px;
+  color: var(--theme-color);
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: inline-block;
+  border-left: 2px solid var(--theme-color-2);
+  border-right: 2px solid var(--theme-color);
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
 .header-left {
   position: fixed;
   top: 0;
@@ -127,10 +150,13 @@ button.slick-next.slick-arrow {
   z-index: 999;
 }
 .header-left .brand-logo {
-  background-color: var(--theme-color);
   text-align: center;
   padding: 10px 20px;
   margin-bottom: 30px;
+  border-right: 3px solid var(--theme-color-2);
+  border-left: 3px solid var(--theme-color);
+  border-radius: 30%;
+  margin-top: 30px;
 }
 .header-left .brand-logo a {
   color: var(--white-color);
@@ -165,6 +191,7 @@ button.slick-next.slick-arrow {
   top: 1px;
   left: 20px;
   border: 2px solid var(--theme-color);
+  border-left: 0;
   border-radius: 50px;
   box-shadow: 0 2px 8px var(--theme-color);
   padding: 12px 15px 12px 50px;
@@ -232,7 +259,7 @@ button.slick-next.slick-arrow {
   background-color: var(--theme-color);
   margin: 0;
   padding: 0;
-  left: px;
+  left: 0px;
   display: none;
 }
 .header-2-menu ul li .header-2-item-drop-down ul li {
@@ -274,6 +301,7 @@ button.slick-next.slick-arrow {
   background-size: cover;
   padding-top: 260px;
   padding-bottom: 260px;
+  min-height: 100vh;
 }
 .intro-area-2 .intro-area-content h1 {
   font-size: 60px;
@@ -307,6 +335,7 @@ button.slick-next.slick-arrow {
 .about-2 {
   padding-top: 80px;
   padding-bottom: 80px;
+  min-height: 100vh;
 }
 .about-2-img {
   position: relative;
@@ -436,6 +465,15 @@ button.slick-next.slick-arrow {
   margin-bottom: 5px;
 }
 
+.hidden {
+  transform: translateX(0);
+  transition: all 1s;
+}
+
+.show {
+  transform: translateX(-10%);
+}
+
 .testimonial-2 {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -495,6 +533,25 @@ button.slick-next.slick-arrow {
 }
 .testimonial-2-slider-box h6.testimonial-2-slider-sub-title {
   font-size: 14px;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
 }
 
 .ms-section {

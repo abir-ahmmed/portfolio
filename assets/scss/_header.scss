@@ -4,10 +4,14 @@
     bottom: 0;
     z-index: 999;
     .brand-logo{
-        background-color: var(--theme-color);
+        
         text-align: center;
         padding: 10px 20px;
         margin-bottom: 30px;
+        border-right: 3px solid var(--theme-color-2);
+        border-left: 3px solid var(--theme-color);
+        border-radius: 30%;
+        margin-top: 30px;
         
         
         a{
@@ -50,6 +54,7 @@
                         top: 1px;
                         left: 20px;
                         border: 2px solid var(--theme-color);
+                        border-left: 0;
                         border-radius: 50px;
                         box-shadow: 0 2px 8px var(--theme-color);
                         padding: 12px 15px 12px 50px;
@@ -109,10 +114,12 @@
             li{
                 position: relative;
                 padding: 30px 20px;
+
+                
                 a{
-                    display: ruby;
+                     display: ruby;
                     text-transform: uppercase;
-                    font-weight: 400;
+                     font-weight: 400;
                    
                 }
 
@@ -126,7 +133,7 @@
                         background-color: var(--theme-color);
                         margin: 0;
                         padding: 0;
-                        left: px;
+                        left: 0px;
                         display: none;
                         
                         li{
