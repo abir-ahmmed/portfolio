@@ -262,3 +262,21 @@ const observer = new IntersectionObserver((entries)=>{
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+// Code Vs Design
+function myCode(){
+document.getElementById("devs").style.display="block";
+document.getElementById("devsIcon").style.color="#24E98C";
+document.getElementById("designIcon").style.color="#D9832E";
+document.getElementById("designer").style.display="none";
+document.getElementById("devsArea").style.display="block";
+document.getElementById("designerArea").style.display="none";
+}
+function myDesign(){
+document.getElementById("designer").style.display="block";
+document.getElementById("devsIcon").style.color="#D9832E";
+document.getElementById("designIcon").style.color="#24E98C";
+document.getElementById("devs").style.display="none";
+document.getElementById("designerArea").style.display="block";
+document.getElementById("devsArea").style.display="none";
+}
