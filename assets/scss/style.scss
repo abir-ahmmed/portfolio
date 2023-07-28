@@ -41,6 +41,10 @@ body{
     background-color: var(--dark-color-light);
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 a{
     text-decoration: none;
     color: var(--white-color);
@@ -160,7 +164,9 @@ button.slick-next.slick-arrow {
     text-transform: uppercase;
 }
 
-
+.active-link{
+    color: var(--theme-color-2);
+  }
 
 // sass --watch assets/scss/style.scss assets/css/style.css
 

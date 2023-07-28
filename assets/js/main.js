@@ -281,13 +281,6 @@ document.getElementById("designerArea").style.display="block";
 document.getElementById("devsArea").style.display="none";
 }
 
-// Side Nav
-var header = document.getElementById("headerLeftMenu");
-var navLink = header.getElementsByClassName("headerLeftItem");
-for (var i = 0; i < navLink.length; i++) {
-  navLink[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  current[0].className = current[0].className.replace(" active", "");
-  this.className += " active";
-  });
-}
+
+// Scroll Active
+
