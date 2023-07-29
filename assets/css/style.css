@@ -251,7 +251,6 @@ button.slick-next.slick-arrow {
   font-weight: 700;
 }
 .header-right .header-right-menu {
-  width: 200px;
   margin-left: 15px;
 }
 .header-right .header-right-menu .header-right-list .header-right-item {
@@ -262,6 +261,9 @@ button.slick-next.slick-arrow {
   border: 2px solid var(--gray-color);
   border-radius: 50px;
   box-shadow: 0 2px 8px var(--gray-color);
+}
+.header-right .header-right-menu .header-right-list .header-right-item .header-right-list-name {
+  display: none;
 }
 .header-right .header-right-menu .header-right-list .header-right-item .header-right-drop-down {
   position: absolute;
@@ -276,7 +278,6 @@ button.slick-next.slick-arrow {
 }
 .header-right .header-right-menu .header-right-list .header-right-item a svg {
   font-size: 20px;
-  border-right: 3px solid var(--gray-color);
   padding-right: 10px;
   padding-left: 10px;
   color: var(--gray-color);
@@ -292,7 +293,6 @@ button.slick-next.slick-arrow {
 }
 .header-right .header-right-menu .header-right-list .active a svg {
   color: var(--white-color);
-  border-right: 3px solid var(--theme-color);
 }
 
 .header-2 {
@@ -382,6 +382,7 @@ button.slick-next.slick-arrow {
   padding-top: 260px;
   padding-bottom: 260px;
   min-height: 100vh;
+  overflow: hidden;
 }
 .intro-area-2 h1 {
   font-size: 80px;
