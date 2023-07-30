@@ -1,0 +1,153 @@
+/* Small */
+@media screen and (min-width: 576px) {
+
+}
+
+/* Medium */
+@media screen and (min-width: 768px) {
+
+    /* Utilities */
+    .section-title-6 {
+        font-size: 48px;
+    }
+
+    /* Banner Area */
+   
+    /* CTA Area */
+
+
+    /* Contact Area */
+
+
+    /*About Area*/
+
+
+    /*Footer Area*/
+
+}
+
+/* Large */
+@media screen and (min-width: 992px) {
+
+    /* Utilities */
+    p{
+        font-size: 16px;
+    }
+    .section-big-title{
+        font-size: 80px;
+    }
+    .section-big-subtitle{
+        font-size: 60px;
+    }
+    .section-title {
+        font-size: 40px;
+    }
+    .section-title-2 {
+        font-size: 50px;
+    }
+    .section-title-3 {
+        font-size: 45px;
+    }
+    .section-title-4 {
+        font-size: 45px;
+    }
+    .section-title-5 {
+        font-size: 55px;
+    }
+    .section-title-6 {
+        font-size: 60px;
+    }
+    .section-item-title {
+        font-size: 40px;
+    }
+    .section-item-title-2 {
+        font-size: 36px;
+    }
+
+    .th-title-3{
+        font-size: 18px;
+    }
+    
+    /* Header Area */
+    
+    /* Banner Area */
+    
+    /* Work Area */
+    
+    /* Services Area */
+    .services-area-2 a {
+        font-size: 40px;
+    }
+    .services-area-3 .shape {
+        display: block;
+    }
+    .services-accordion .accordion-button {
+        font-size: 30px;
+    }
+
+    /*Process Area*/
+    
+    /*About Area*/
+    
+
+   
+   
+    /*Portfolio area*/
+    
+
+    /* Footer Area */
+    
+}
+
+/* Extra large */
+@media screen and (min-width: 1200px) {
+
+
+
+    /* Contact Area */
+
+
+    /*About area*/
+
+
+    /*Portfolio area*/
+
+
+}
+
+/* Extra extra large */
+@media screen and (min-width: 1400px) {
+
+    /* Utilities */
+    .section-title {
+        font-size: 50px;
+    }
+    .section-title-2 {
+        font-size: 68px;
+    }
+    .section-title-3 {
+         font-size: 55px;
+     }
+    .section-title-4 {
+        font-size: 60px;
+    }
+    .section-title-5 {
+        font-size: 65px;
+    }
+    .section-item-title {
+        font-size: 60px;
+    }
+    .section-item-title-2 {
+        font-size: 50px;
+    }
+
+
+
+    /* Services Area */
+
+
+    /* Work Area */
+   
+    /* Contact Area */
+
+}

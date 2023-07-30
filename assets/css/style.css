@@ -78,7 +78,6 @@ ul {
 }
 
 .th-title {
-  font-size: 18px;
   color: var(--theme-color);
   padding: 10px 20px;
   border-radius: 50px;
@@ -136,7 +135,7 @@ button.slick-next.slick-arrow {
 }
 
 .th-title-3 {
-  font-size: 18px;
+  font-size: 16px;
   color: var(--theme-color);
   padding: 10px 20px;
   border-radius: 50px;
@@ -149,6 +148,10 @@ button.slick-next.slick-arrow {
 
 .active-link {
   color: var(--theme-color-2);
+}
+
+.container-intro {
+  width: 992px;
 }
 
 .header-left {
@@ -501,8 +504,7 @@ button.slick-next.slick-arrow {
   text-transform: capitalize;
 }
 .about-2-content p {
-  width: 50%;
-  font-size: 16px;
+  width: 80%;
   line-height: 24px;
   letter-spacing: 2px;
   margin-top: 30px;
@@ -511,7 +513,6 @@ button.slick-next.slick-arrow {
 }
 
 .skills {
-  background: #111;
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -566,7 +567,6 @@ button.slick-next.slick-arrow {
 .services-2 {
   padding-top: 80px;
   padding-bottom: 40px;
-  background-color: var(--dark-color-3);
 }
 .services-2-box {
   background-color: var(--white-color);
@@ -937,7 +937,6 @@ button.slick-next.slick-arrow {
   text-transform: uppercase;
 }
 footer .footer-area {
-  background-color: var(--dark-color);
   padding-top: 80px;
   padding-bottom: 80px;
 }

@@ -92,7 +92,7 @@ ul{
 }
 
 .th-title{
-    font-size: 18px;
+
     color: var(--theme-color); 
     padding: 10px 20px;
     border-radius: 50px;
@@ -153,7 +153,7 @@ button.slick-next.slick-arrow {
     align-items: center;
 }
 .th-title-3{
-    font-size: 18px;
+    font-size: 16px;
     color: var(--theme-color); 
     padding: 10px 20px;
     border-radius: 50px;
@@ -167,6 +167,12 @@ button.slick-next.slick-arrow {
 .active-link{
     color: var(--theme-color-2);
   }
+
+  .container-intro{
+    width: 992px;
+  }
+
+
 
 // sass --watch assets/scss/style.scss assets/css/style.css
 

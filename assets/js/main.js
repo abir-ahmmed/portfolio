@@ -133,7 +133,7 @@ $(window).on("load resize",function() {
   });
 
   // Slider Slick
-  $('.testimonial-2-slider').slick({
+  $('.testimonial-slider').slick({
     dots: false,
     infinite: false,
     speed: 300,
@@ -203,50 +203,6 @@ $(window).on("load resize",function() {
 // WOW
 new WOW().init();
 
-// MultiScroll
-$('#myContainer').multiscroll({
-
-  'verticalCentered' : true,
-  'scrollingSpeed': 700,
-  'easing': 'easeInQuart',
-  'easingcss3': 'ease-out',
-  'menu': false, // custom selector of menu list
-  'sectionsColor': [],
-  'anchors':[],
-  'navigation': false,
-  'navigationPosition': 'right', // or 'left'
-  'navigationColor': '#000',
-  'navigation<a href="https://www.jqueryscript.net/tooltip/">Tooltip</a>s': [],
-  'loopBottom': false,
-  'loopTop': false,
-  'css3': true,
-  'paddingTop': 0,
-  'paddingBottom': 0,
-  'fixedElements': null,
-  'normalScrollElements': null,
-  'keyboardScrolling': true,
-  'touchSensitivity': 5,
-
-  // Custom selectors
-  'sectionSelector': '.ms-section',
-  'leftSelector': '.ms-left',
-  'rightSelector': '.ms-right',
-
-  // callbacks
-  'afterLoad': function(anchorLink, index){
-    // do something
-  },
-  'onLeave': function(index, nextIndex, direction){
-    // do something
-  },
-  'afterRender': function(){
-    // do something
-  },
-  'afterResize': function(){
-    // do something
-  }
-
-});
 
 // animation
 const observer = new IntersectionObserver((entries)=>{
