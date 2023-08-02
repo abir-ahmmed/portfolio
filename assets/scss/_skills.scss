@@ -44,18 +44,18 @@
             border: 2px solid var(--theme-color-2);
             margin: 5px;
             display: inline-block;
-            padding: 50px;
+            padding: 24px;
             border-radius: 48%;
             margin-bottom: 20px;
             margin-right: 20px;
             &-icon{
                 & svg{
-                    font-size: 80px;
+                    font-size: 24px;
                 }
             }
 
             &-number{
-                font-size: 36px;
+                font-size: 18px;
             }
 
 

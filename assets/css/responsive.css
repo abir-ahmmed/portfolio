@@ -11,8 +11,30 @@
         font-size: 48px;
     }
 
-    /* Banner Area */
-   
+    /* Intro Area */
+    :root{
+
+    
+    
+    
+        --h1-fs:48px;
+        --h2-fs:36px;
+        --h3-fs:24px;
+        --h4-fs:18px;
+        --h5-fs:16px;
+        --h6-fs:14px;
+    
+        --ragular-f:15px;
+        --medium-f:16px;
+        --small-f:14px;
+        --smaller-f:12px;
+    
+    
+        --light-fw:300;
+        --ragular-fw:400;
+        --medium-fw:500;
+        --bold-fw:700;
+    }
     /* CTA Area */
 
 
@@ -30,46 +52,29 @@
 @media screen and (min-width: 992px) {
 
     /* Utilities */
-    p{
-        font-size: 16px;
-    }
-    .section-big-title{
-        font-size: 80px;
-    }
-    .section-big-subtitle{
-        font-size: 60px;
-    }
-    .section-title {
-        font-size: 40px;
-    }
-    .section-title-2 {
-        font-size: 50px;
-    }
-    .section-title-3 {
-        font-size: 45px;
-    }
-    .section-title-4 {
-        font-size: 45px;
-    }
-    .section-title-5 {
-        font-size: 55px;
-    }
-    .section-title-6 {
-        font-size: 60px;
-    }
-    .section-item-title {
-        font-size: 40px;
-    }
-    .section-item-title-2 {
-        font-size: 36px;
-    }
+    :root{
 
-    .th-title-3{
-        font-size: 18px;
+        --h1-fs:60px;
+        --h2-fs:48px;
+        --h3-fs:36px;
+        --h4-fs:24px;
+        --h5-fs:18px;
+        --h6-fs:14px;
+    
+        --ragular-f:15px;
+        --medium-f:16px;
+        --small-f:14px;
+        --smaller-f:12px;
+    
+    
+        --light-fw:300;
+        --ragular-fw:400;
+        --medium-fw:500;
+        --bold-fw:700;
     }
     
     /* Header Area */
-    
+   
     /* Banner Area */
     
     /* Work Area */
@@ -102,10 +107,32 @@
 /* Extra large */
 @media screen and (min-width: 1200px) {
 
+    .header-right{
+        display: flex;
+    }
 
+    /* Intro Area */
+    :root{
 
-    /* Contact Area */
-
+        --h1-fs:80px;
+        --h2-fs:60px;
+        --h3-fs:48px;
+        --h4-fs:36px;
+        --h5-fs:20px;
+        --h6-fs:16px;
+    
+        --ragular-f:15px;
+        --medium-f:16px;
+        --small-f:14px;
+        --smaller-f:12px;
+    
+    
+        --light-fw:300;
+        --ragular-fw:400;
+        --medium-fw:500;
+        --bold-fw:700;
+    }
+    
 
     /*About area*/
 
@@ -142,7 +169,11 @@
     }
 
 
-
+    /* Header-Area*/
+    .header-left{
+        display: flex;
+        position: fixed;
+    }
     /* Services Area */
 
 

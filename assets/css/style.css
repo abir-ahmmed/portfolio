@@ -9,11 +9,11 @@
   --dark-color-2:#111111;
   --dark-color-3:#222;
   --dark-color-light:#1f1f1f;
-  --h1-fs:60px;
-  --h2-fs:35px;
-  --h3-fs:30px;
-  --h4-fs:20px;
-  --h5-fs:18px;
+  --h1-fs:36px;
+  --h2-fs:24px;
+  --h3-fs:18px;
+  --h4-fs:16px;
+  --h5-fs:15px;
   --h6-fs:14px;
   --ragular-f:15px;
   --medium-f:16px;
@@ -151,19 +151,18 @@ button.slick-next.slick-arrow {
 }
 
 .container-intro {
-  width: 992px;
+  max-width: 768px;
 }
 
 .header-left {
-  max-width: 400px;
-  position: fixed;
+  max-width: 280px;
+  position: absolute;
   top: 0;
   bottom: 0;
   height: 100vh;
-  display: flex;
+  display: none;
   align-items: center;
   left: 15px;
-  position: relative;
 }
 .header-left-logo {
   position: absolute;
@@ -251,7 +250,7 @@ button.slick-next.slick-arrow {
   z-index: 999;
   height: 100vh;
   margin: 0 auto;
-  display: flex;
+  display: none;
   align-items: center;
 }
 .header-right .brand-logo {
@@ -373,94 +372,74 @@ button.slick-next.slick-arrow {
   display: block;
 }
 
-.home-section .home-area {
-  background-image: url(../img/home-banner\ -\ dark.jpg);
-  background-size: cover;
-  padding-top: 355px;
-  padding-bottom: 344px;
-}
-.home-section .home-area .home-area-content h6 {
-  font-size: 18px;
-  color: var(--theme-color);
-}
-.home-section .home-area .home-area-content h1 {
-  font-size: 60px;
-}
-.home-section .home-area .home-area-content p {
-  width: 90%;
-  color: #f1f1f1;
-}
-.home-section .home-area .home-area-content .home-btn a {
-  color: var(--white);
-}
-
-.intro-area-2 {
-  background-size: cover;
-  padding-top: 260px;
-  padding-bottom: 260px;
+.intro-area {
+  text-align: center;
   min-height: 100vh;
   overflow: hidden;
 }
-.intro-area-2 h1 {
-  font-size: 80px;
+.intro-area h1 {
+  font-size: var(--h1-fs);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: left;
 }
-.intro-area-2 h2 {
-  font-size: 48px;
+.intro-area h2 {
+  font-size: var(--h2-fs);
 }
-.intro-area-2 p {
-  font-size: 18px;
+.intro-area h2 {
+  font-size: var(--h2-fs);
 }
-.intro-area-2-btn a {
+.intro-area-btn a {
   color: var(--white);
 }
-.intro-area-2 .designer {
+.intro-area .designer {
   display: none;
 }
-.intro-area-2 .skill-btn {
+.intro-area .skill-btn {
   display: flex;
   color: var(--theme-color-2);
 }
-.intro-area-2 .skill-btn svg.skill-btn-active {
+.intro-area .skill-btn svg.skill-btn-active {
   color: var(--theme-color-2);
 }
-.intro-area-2 .skill-btn svg {
+.intro-area .skill-btn svg {
   margin: 2px 10px;
   color: var(--theme-color);
 }
-.intro-area-2 .designer-area {
+.intro-area .designer-area {
   display: none;
 }
-.intro-area-2 .intro-area-content h1 {
+.intro-area .intro-area-content h1 {
   font-size: 60px;
 }
-.intro-area-2 .intro-area-content p {
+.intro-area .intro-area-content p {
   width: 90%;
   color: #f1f1f1;
   margin-top: 40px;
   margin-bottom: 40px;
 }
-.intro-area-2 .intro-area-content .intro-btn a {
+.intro-area .intro-area-content .intro-btn a {
   color: var(--white);
 }
-.intro-area-2 .intro-area-content .work-btn {
+.intro-area .intro-area-content .work-btn {
   margin-right: 30px;
 }
-.intro-area-2-img a {
+.intro-area-img a {
   color: #fff;
 }
-.intro-area-2-img img {
+.intro-area-img img {
   width: 100%;
   background: linear-gradient(-377deg, #D9832E, transparent, transparent);
   transition: 0.3s;
   border-radius: 50%;
 }
-.intro-area-2-img-btn-1 {
+.intro-area-img-btn-1 {
   position: absolute;
 }
-.intro-area-2-img-btn-2 {
+.intro-area-img-btn-2 {
   position: absolute;
 }
-.intro-area-2-img img:hover {
+.intro-area-img img:hover {
   border-top: 3px solid var(--theme-color-2);
   box-shadow: 0 4px 16px var(--theme-color);
   border: rotate(30deg);
@@ -562,16 +541,16 @@ button.slick-next.slick-arrow {
   border: 2px solid var(--theme-color-2);
   margin: 5px;
   display: inline-block;
-  padding: 50px;
+  padding: 24px;
   border-radius: 48%;
   margin-bottom: 20px;
   margin-right: 20px;
 }
 .skills-tools-box-icon svg {
-  font-size: 80px;
+  font-size: 24px;
 }
 .skills-tools-box-number {
-  font-size: 36px;
+  font-size: 18px;
 }
 .skills-tools-box:hover {
   border: 2px solid var(--gray-color);

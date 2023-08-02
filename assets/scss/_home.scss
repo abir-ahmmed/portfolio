@@ -1,49 +1,23 @@
-.home-section{
-    // min-height: 100vh;
-    .home-area{
-        background-image: url(../img/home-banner\ -\ dark.jpg);
-        background-size: cover;
-        
-        padding-top: 355px;
-        padding-bottom: 344px;
 
-        .home-area-content{
-            h6{
-                font-size: 18px;
-                color: var(--theme-color);
-            }
-            h1{
-                font-size: 60px;
-            }
-
-            p{
-                width: 90%;
-                color: #f1f1f1;
-            }
-
-            .home-btn a{
-                 color: var(--white);
-            }
-        }
-    }
-   
+.intro-area{
+ 
     
-}
-.intro-area-2{
-
-    background-size: cover; 
-    padding-top: 260px;
-    padding-bottom: 260px;
+    text-align: center;
     min-height: 100vh;
     overflow: hidden;
     h1{
-        font-size: 80px;
+        font-size: var(--h1-fs);
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: left;
     }
     h2{
-        font-size: 48px;
+        font-size: var(--h2-fs);
+        
     }
-    p{
-        font-size: 18px;
+    
+    h2{
+        font-size: var(--h2-fs);
     }
 
     &-btn{
