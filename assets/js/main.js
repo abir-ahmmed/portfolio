@@ -90,20 +90,6 @@ const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moo
 
 
 /*==============SCROLL REVEAL ANIMATION=============*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: '2500',
-    delay: 400,
-    //reset: true // Animations repeat
-})
-
-sr.reveal(`.home__img, .newsletter__container, .footer__logo,
-footer__description, .footer__content, .footer__info`)
-sr.reveal('.home__data', {origin:'bottom'})
-sr.reveal('.about__data, .recently__data', {origin:'left'})
-sr.reveal('.about__img, .recently__img', {origin:'right'})
-sr.reveal('.popular__card', {interval: 100})
 
 
 // 3D
@@ -175,14 +161,7 @@ $(window).on("load resize",function() {
   });
 
 
-  // Home Slider
-  $(document).ready(function(){
-    $('.main-area-slider').slick({
-    });
-  });
-// Slider Swiper
-
-
+ 
   // Skills Bar
   $(".skills-progress-bar").each(function(){
     $(this).find(".skills-progress-bar-inner").animate({
@@ -197,27 +176,7 @@ $(window).on("load resize",function() {
   });
 
   // theme-color change
- 
 
-
-// WOW
-new WOW().init();
-
-
-// animation
-const observer = new IntersectionObserver((entries)=>{
-  entries.forEach((entries)=>{
-    console.log(entry)
-    if(entry.isIntersecting){
-      entry.target.classList.add('show');
-    }else{
-        entry.target.classList.remove('show')
-    };
-  });
-});
-
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));
 
 // Code Vs Design
 function myCode(){
@@ -239,4 +198,12 @@ document.getElementById("devsArea").style.display="none";
 
 
 // Scroll Active
+$(document).ready(function(){
+  $(window).scroll(function{
 
+    if($(window).scrolltop()<$("#home").height()){
+      $(#homeSection).show(); //true
+      $("home-section:not(#about)").hide();
+    }
+  })
+})

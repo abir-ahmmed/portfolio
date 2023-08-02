@@ -114,12 +114,12 @@
     /* Intro Area */
     :root{
 
-        --h1-fs:80px;
-        --h2-fs:60px;
-        --h3-fs:48px;
-        --h4-fs:36px;
-        --h5-fs:20px;
-        --h6-fs:16px;
+       
+        --h1-fs:60px;
+        --h2-fs:48px;
+        --h3-fs:36px;
+        --h4-fs:20px;
+        --h5-fs:16px;
     
         --ragular-f:15px;
         --medium-f:16px;
