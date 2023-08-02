@@ -119,47 +119,33 @@ $(window).on("load resize",function() {
   });
 
   // Slider Slick
-  $('.testimonial-slider').slick({
-    dots: false,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    // pagination: {
-    //   el: ".testimonial-2-slider-pagination",
-    // },
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
-  });
-
+    jQuery(document).ready(function($) {
+      $('.testimonial-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        responsive: [{
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+           breakpoint: 400,
+           settings: {
+              arrows: false,
+              slidesToShow: 1,
+              slidesToScroll: 1
+           }
+        }]
+    });
+});
 
  
   // Skills Bar
@@ -198,12 +184,49 @@ document.getElementById("devsArea").style.display="none";
 
 
 // Scroll Active
-$(document).ready(function(){
-  $(window).scroll(function{
+if (document.addEventListener) {
+  document.addEventListener("mousewheel", MouseWheelHandler, false); //IE9, Chrome, Safari, Oper
+  document.addEventListener("DOMMouseScroll", MouseWheelHandler, false); //Firefox
+} else {
+  document.attachEvent("onmousewheel", MouseWheelHandler); //IE 6/7/8
+}
 
-    if($(window).scrolltop()<$("#home").height()){
-      $(#homeSection).show(); //true
-      $("home-section:not(#about)").hide();
+var i = 1;
+var mouseWheel = true;
+function MouseWheelHandler(e) {
+  if (!mouseWheel) {
+    return false;
+  }
+  mouseWheel = false;
+  setTimeout(function() {
+    mouseWheel = true;
+  }, 3000); // Stop mouse wheel event for 3 seconds
+  e = window.event || e;
+  var delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
+  var h = window.innerHeight;
+  var section = document.getElementsByClassName("scroll-section");
+  console.log(i);
+  if (i <= section.length && i >= 0) {
+    //scrolling down?
+    if (delta < 0) {
+      window.scrollTo({
+        top: h * i,
+        behavior: "smooth"
+      });
+      i++;
+    } else {
+      //scrolling up?
+      window.scrollTo({
+        top: h * i,
+        behavior: "smooth"
+      });
+      i--;
     }
-  })
-})
+  } else {
+    i = 1;
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+}

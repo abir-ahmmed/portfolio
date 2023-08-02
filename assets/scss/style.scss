@@ -104,11 +104,12 @@ ul{
 }
 
 .th-slider{
+    display: flex;
     font-size: 18px;
     color: var(--white-color); 
     padding: 10px 20px;
     border-radius: 50px;
-    display: inline-block;
+    // display: inline-block;
     box-shadow: 0 2px 8px var(--theme-color);
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -170,6 +171,12 @@ button.slick-next.slick-arrow {
 
   .container-intro{
     max-width: 768px;
+  }
+  
+  .scroll-section{
+    height: 100vh;
+    // display: flex;
+    align-items: center
   }
 
 
