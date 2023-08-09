@@ -159,25 +159,32 @@ button.slick-next.slick-arrow {
     padding: 10px 20px;
     border-radius: 50px;
     display: inline-block;
-    border-left: 2px solid var(--theme-color-2);
-    border-right: 2px solid var(--theme-color);
+    border-bottom: 2px solid var(--theme-color);
+    border-left: 2px solid var(--theme-color);
+    border-right: 2px solid var(--theme-color-2);
+    border-top: 2px solid var(--theme-color-2);
+    border-width: 70% 100% 70% 100% ;
     margin-bottom: 30px;
     text-transform: uppercase;
 }
 
-.active-link{
+.th-title-3 svg{
     color: var(--theme-color-2);
+    margin-right: 5px;
+}
+
+a.active-menu{
+    color: var(--theme-color-2);
+    box-shadow: 0 2px 8px var(--theme-color);
+    border-radius: 50px;
+    background-color: #fff;
   }
 
   .container-intro{
     max-width: 768px;
   }
   
-  .scroll-section{
-    height: 100vh;
-    // display: flex;
-    align-items: center
-  }
+
 
 
 
