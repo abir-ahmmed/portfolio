@@ -149,9 +149,22 @@ button.slick-next.slick-arrow {
   text-transform: uppercase;
 }
 
+.th-title-3:hover {
+  border-bottom: 2px solid var(--theme-color-2);
+  border-left: 2px solid var(--theme-color-2);
+  border-right: 2px solid var(--theme-color);
+  border-top: 2px solid var(--theme-color);
+  transition: 0.3s;
+  color: var(--theme-color-2);
+}
+
 .th-title-3 svg {
   color: var(--theme-color-2);
   margin-right: 5px;
+}
+
+.th-title-3:hover .th-title-3 svg {
+  color: var(--theme-color);
 }
 
 a.active-menu {
