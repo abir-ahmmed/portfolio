@@ -2,6 +2,7 @@
 :root {
   --theme-color:#D9832E;
   --theme-color-2:#24E98C;
+  --theme-color-3:#124F33;
   --white-color:#fff;
   --gray-light-color:#EAEDF2;
   --gray-color:#616161;
@@ -295,7 +296,19 @@ a.active-menu {
   font-weight: 700;
 }
 .header-right .header-right-menu {
+  position: relative;
   margin-left: 15px;
+}
+.header-right .header-right-menu-nav {
+  margin-bottom: 50px;
+}
+.header-right .header-right-menu-nav svg {
+  font-size: 20px;
+  padding: 10px;
+  color: var(--gray-color);
+  border: 2px solid var(--theme-color-2);
+  box-shadow: 0 2px 8px var(--theme-color-2);
+  border-radius: 50%;
 }
 .header-right .header-right-menu .header-right-list .header-right-item {
   margin: 20px 0;
@@ -303,9 +316,7 @@ a.active-menu {
   padding: 10px;
   display: flex;
   justify-self: center;
-  border: 2px solid var(--gray-color);
   border-radius: 50px;
-  box-shadow: 0 2px 8px var(--gray-color);
 }
 .header-right .header-right-menu .header-right-list .header-right-item .header-right-drop-down {
   position: absolute;
@@ -320,12 +331,15 @@ a.active-menu {
 }
 .header-right .header-right-menu .header-right-list .header-right-item a svg {
   font-size: 20px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 10px;
   color: var(--gray-color);
+  border: 2px solid var(--theme-color);
+  box-shadow: 0 2px 8px var(--theme-color);
+  border-radius: 50%;
 }
 .header-right .header-right-menu .header-right-list .header-right-item a .header-right-list-name {
   margin-left: 10px;
+  display: none;
 }
 .header-right .header-right-menu .header-right-list .active {
   border: 2px solid var(--theme-color) !important;
@@ -564,9 +578,12 @@ a.active-menu {
   width: 10%;
   border-radius: 30px;
 }
+.skills-tools {
+  margin-top: 30px;
+}
 .skills-tools-box {
+  text-align: center;
   border: 2px solid var(--theme-color-2);
-  margin: 5px;
   display: inline-block;
   padding: 24px;
   border-radius: 48%;
@@ -574,14 +591,15 @@ a.active-menu {
   margin-right: 20px;
 }
 .skills-tools-box-icon svg {
-  font-size: 24px;
+  font-size: 36px;
 }
 .skills-tools-box-number {
-  font-size: 18px;
+  font-size: 24px;
 }
 .skills-tools-box:hover {
   border: 2px solid var(--gray-color);
   background-color: var(--theme-color);
+  color: var(--dark-color-light);
 }
 
 .services-2 {
