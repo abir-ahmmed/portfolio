@@ -67,7 +67,9 @@ clip-path: polygon(50% 0%, 100% 0, 100% 58%, 50% 100%, 0 60%, 0 0);
         }        
         &-icon{
             svg{
-                padding: 0 5px;
+                padding: 10px;
+                border: 2px solid var(--gray-color);
+                border-radius: 50%;
             }
         }
         &-icon a:hover{
@@ -83,6 +85,7 @@ clip-path: polygon(50% 0%, 100% 0, 100% 58%, 50% 100%, 0 60%, 0 0);
             width: 80%;
             padding: 10px 0;
             margin-top: 15px;
+            margin-bottom: 15px;
         }
 
         &-btn:hover{
