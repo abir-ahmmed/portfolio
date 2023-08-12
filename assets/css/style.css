@@ -183,15 +183,15 @@ a.active-menu {
 }
 
 .header-left {
-  margin-top: 15px;
+  margin-top: 50px;
   display: block;
   align-items: center;
   left: 30px;
 }
 .header-left-logo {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 30px;
+  left: 30px;
   border-radius: 50%;
   background-color: var(--dark-color-3);
   padding: 8px;
@@ -212,38 +212,16 @@ a.active-menu {
 .header-left-box-content {
   margin-bottom: 30px;
 }
+.header-left-box-content-title {
+  font-size: 48px;
+  color: var(--theme-color-2);
+}
 .header-left-box-content-subtitle {
-  font-size: var(--fs-4);
+  font-size: 36px;
   font-weight: 400;
   text-align: right;
   letter-spacing: 1.3px;
   text-align: center;
-}
-.header-left-box .intro-img-shape {
-  position: absolute;
-  width: 260px;
-  height: 260px;
-  right: 0;
-  left: 0;
-  bottom: -30px;
-  background-color: #D9832E;
-  margin: 0 auto;
-  border-radius: 75% 20px 0px 20px;
-  rotate: 44.5deg;
-  z-index: 1;
-  border: 10px solid var(--dark-color-light);
-}
-.header-left-box img.intro-img {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  z-index: 999;
-  right: 0;
-  left: 2px;
-  margin: 0 auto;
-  bottom: -70px;
-  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 60%, 50% 100%, 0 80%, 0 0);
-  clip-path: polygon(50% 0%, 100% 0, 100% 58%, 50% 100%, 0 60%, 0 0);
 }
 .header-left-box-icon svg {
   padding: 10px;
@@ -261,7 +239,7 @@ a.active-menu {
   font-weight: 500;
   padding: 10px 30px;
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 24%;
 }
 .header-left-box-btn:hover {
   color: var(--white-color);
@@ -353,65 +331,32 @@ a.active-menu {
   color: var(--white-color);
 }
 
-.header-2 {
-  position: fixed;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  background-color: #111;
-  z-index: 999;
-}
-.header-2 .brand-logo {
-  background-color: var(--theme-color);
-  text-align: center;
-  padding: 10px 5px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  border-radius: 10px;
-  letter-spacing: 3px;
-}
-.header-2 .brand-logo a {
-  color: var(--white-color);
-  font-weight: 500;
-}
-.header-2-menu {
-  display: flex;
-}
-.header-2-menu ul {
-  display: flex;
-}
-.header-2-menu ul li {
-  position: relative;
-  padding: 30px 20px;
-}
-.header-2-menu ul li a {
-  display: ruby;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-.header-2-menu ul li a:hover {
-  color: var(--theme-color);
-}
-.header-2-menu ul li .header-2-item-drop-down ul {
+.intro-img-shape {
   position: absolute;
-  display: grid;
-  background-color: var(--theme-color);
-  margin: 0;
-  padding: 0;
-  left: 0px;
-  display: none;
+  width: 360px;
+  height: 360px;
+  right: 0;
+  left: 0;
+  bottom: -30px;
+  background-color: #D9832E;
+  margin: 0 auto;
+  border-radius: 75% 20px 0px 20px;
+  rotate: 44.5deg;
+  z-index: 1;
+  border: 10px solid var(--dark-color-light);
 }
-.header-2-menu ul li .header-2-item-drop-down ul li {
-  margin-bottom: 10px;
-  padding-bottom: 0;
-  margin-top: 0;
-}
-.header-2-menu ul li .header-2-item-drop-down ul li a:hover {
-  color: var(--theme-color-2);
-  font-weight: 400;
-}
-.header-2-menu ul li:hover .header-2-item-drop-down ul {
-  display: block;
+
+img.intro-img {
+  position: absolute;
+  width: 70%;
+  height: auto;
+  z-index: 999;
+  right: 0;
+  left: 1%;
+  margin: 0 auto;
+  bottom: -11%;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 60%, 50% 100%, 0 80%, 0 0);
+  clip-path: polygon(50% 0%, 100% 0, 100% 58%, 50% 100%, 0 60%, 0 0);
 }
 
 .home-section {
