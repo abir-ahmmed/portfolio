@@ -1,4 +1,26 @@
 
+.hero-area{
+    position: relative;
+    &-shape{
+        
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+
+    }
+
+    &-icon a{
+        font-size: 20px;
+    }
+    &-icon svg:hover{
+        color: var(--theme-color-2);
+    }
+
+    img{
+        border-bottom-right-radius: 50%;
+    }
+
+}
+
 .home-section{
     display: flex;
     align-items: center;

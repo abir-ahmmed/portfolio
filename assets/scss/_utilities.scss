@@ -1,0 +1,152 @@
+
+// color
+.bg-trans{
+    background-color: transparent;
+}
+.bg-amber{
+    background-color: var(--theme-color);
+}
+.bg-green{
+    background-color: var(--theme-color-2);
+}
+
+
+
+// text
+.text-center{
+    text-align: center;
+}
+.text-green{
+    color: var(--theme-color-2);
+}
+
+.text-amber{
+    color: var(--theme-color);
+}
+
+
+
+// Display
+.flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.items-center{
+    align-items: center;
+}
+.items-end{
+    align-items: end;
+}
+
+.hidden{
+    display: none;
+}
+
+.absolute{
+    position: absolute;
+}
+
+
+// border
+
+.border-2{
+    border: 2px;
+}
+.border-4{
+    border: 4px;
+}
+.border-6{
+    border: 6px;
+}
+
+
+// border color
+.border-primary{
+    border-color: var(--theme-color);
+}
+.border-secondary{
+    border-color: var(--theme-color-2);
+}
+
+
+// radius
+.rounded{
+    border-radius: 4px;
+}
+.rounded-md{
+    border-radius: 6px;
+}
+.rounded-t-lg{
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.rounded-b-lg{
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.rounded-l-lg{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.rounded-r-lg{
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.rounded-lg{
+    border-radius: 8px;
+}
+.rounded-full{
+    border-radius: 50%;
+}
+
+//  Margin
+.my-1{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.my-2{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.my-3{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.my-4{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.my-md{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.my-xl{
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+.my-xxl{
+    margin-top: 160px;
+    margin-bottom: 160px;
+}
+
+.mx-auto{
+    margin: auto;
+}
+
+.hover:amber{
+    color: var(--theme-color-2);
+}
+.hover:green{
+    color: var(--theme-color);
+}
+
