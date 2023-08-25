@@ -161,6 +161,22 @@ a.active-menu {
   background-color: #fff;
 }
 
+.th-border {
+  border-bottom: 2px solid var(--theme-color);
+  border-left: 2px solid var(--theme-color);
+  border-right: 2px solid var(--theme-color-2);
+  border-top: 2px solid var(--theme-color-2);
+}
+
+.th-border:hover {
+  border-radius: 50%;
+  border-bottom: 2px solid var(--theme-color-2);
+  border-left: 2px solid var(--theme-color-2);
+  border-right: 2px solid var(--theme-color);
+  border-top: 2px solid var(--theme-color);
+  transition: 0.3s;
+}
+
 .container-intro {
   padding-right: 15px;
   padding-left: 15px;
@@ -311,6 +327,10 @@ a.active-menu {
 
 .hidden {
   display: none;
+}
+
+.d-block {
+  display: block;
 }
 
 .absolute {
@@ -504,6 +524,22 @@ a.active-menu {
 .w-30px {
   width: 30px;
   height: 30px;
+}
+
+.th-border {
+  border-bottom: 2px solid var(--theme-color);
+  border-left: 2px solid var(--theme-color);
+  border-right: 2px solid var(--theme-color-2);
+  border-top: 2px solid var(--theme-color-2);
+}
+
+.th-border:hover {
+  border-radius: 50%;
+  border-bottom: 2px solid var(--theme-color-2);
+  border-left: 2px solid var(--theme-color-2);
+  border-right: 2px solid var(--theme-color);
+  border-top: 2px solid var(--theme-color);
+  transition: 0.3s;
 }
 
 .header-left {
@@ -874,6 +910,10 @@ img.intro-img {
   display: inline-block;
   padding: 24px;
   border-radius: 48%;
+  border-bottom: 2px solid var(--theme-color);
+  border-left: 2px solid var(--theme-color);
+  border-right: 2px solid var(--theme-color-2);
+  border-top: 2px solid var(--theme-color-2);
   margin-bottom: 20px;
   margin-right: 20px;
 }
@@ -883,10 +923,11 @@ img.intro-img {
 .skills-tools-box-number {
   font-size: 24px;
 }
-.skills-tools-box:hover {
-  border: 2px solid var(--gray-color);
-  background-color: var(--theme-color);
-  color: var(--dark-color-light);
+.skills-tools-box:hover .skills-tools-box-icon {
+  color: var(--theme-color-2);
+}
+.skills-tools-box:hover .skills-tools-box-number {
+  color: var(--theme-color);
 }
 
 .services-2 {

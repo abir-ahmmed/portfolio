@@ -145,8 +145,14 @@
     align-items: end;
 }
 
+
+// Display
 .hidden{
     display: none;
+}
+
+.d-block{
+    display: block;
 }
 
 // position
@@ -218,6 +224,9 @@
 }
 .rounded-full{
     border-radius: 50%;
+}
+.rounded-medium{
+    
 }
 
 //  Margin

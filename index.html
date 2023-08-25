@@ -16,16 +16,16 @@
 </head>
 <body>
 
-    <div class="smithP">
+    <div class="relative">
         
             <!-- == Header Area Start == -->
             <header >
-                <nav class="flex">
+                <nav class="mobile-nav  flex">
                     <!-- Logo -->
-                    <img src="assets/img/A.png" id="" alt="" class="w-30px mx-3 my-3">
+                    <img  src="assets/img/A.png" id="" alt="" class="w-30px mx-3 my-3">
     
                     <!-- Mobile Menu -->
-                    <button onclick="navToggle()" class="bg-trans border-0 text-white absolute top-0 text-lg right-0 mx-3 my-3"><i class="fa-solid fa-bars"></i></button>
+                    <button onclick="navToggle()" class="md-hidden bg-trans border-0 text-white absolute top-0 text-lg right-0 mx-3 my-3"><i class="fa-solid fa-bars"></i></button>
 
                 </nav>
 
@@ -49,89 +49,10 @@
                     </ul>
 
                     <!--  Closer -->
-                    <i class="fa-solid fa-xmark text-5xl m-auto flex" onclick="navClose()" id="navClose"></i>
+                    <i class="fa-solid fa-xmark text-5xl absolute top-0 right-0 my-3 mx-3 flex" onclick="navClose()" id="navClose"></i>
                    
                 </nav>
-                <div class="conatiner container-intro ">
-
-                    <div class="header-left " id="header-left">
-                        <div class="header-left-box hidden">
-                            <div class="header-left-box-content">
-                                
-                                <div class="header-left-box-content">
-                                </div>
-                            </div>
-                            <div class="intro-img-shape" id="introShape"></div>
-                            <img class="intro-img" src="assets/img/abir.png" alt="" class="intro-img">
-                            
-                            <!-- <img src="assets/img/IMG-20230126-WA0004.jpg" alt="" class="header-left-box-img"> -->
-                            <div class="header-left-box-icon">
-                                
-                                <a href="https://www.linkedin.com/in/abir-ahmmed/"><i class="fa-brands fa-linkedin"></i></a>
-                                <a href="https://github.com/abir-ahmmed"><i class="fa-brands fa-github"></i></a>
-                                <a href="https://www.facebook.com/devs.abir"><i class="fa-brands fa-facebook"></i></a>
-                                <a href="https://twitter.com/devs_abir"><i class="fa-brands fa-twitter"></i></a>
-                                <a href="https://www.instagram.com/abirahmmedrana/"><i class="fa-brands fa-instagram"></i></a>
-                            </div>
-                            <p class="header-left-box-copyright">© All Rights Reserved By Abir 2023 </p>
-                            <a href="" class="btn header-left-box-btn">
-                                <i class="fa-solid fa-envelope"></i>
-                                hire me
-                            </a>
-                        </div>
-    
-    
-
-                    </div>
-                    <div class="header-right" id="navbar-collapse-toggle">
-                        <div class="header-right-menu nav__menu" id="nav__menu">
-                            <div class="header-right-menu-nav">
-                                <i class="fa-solid fa-bars"></i>
-                            </div>
-                            <ul class="header-right-list">
-                                <li class="header-right-item ">
-                                    <a href="index.html"  class="header-right-link">
-                                        <i class="fa-solid fa-house-chimney-window"></i>
-                                        <span class="header-right-list-name ">Home</span>
-                                    </a>
-                                    
-                                </li>
-                                <li class="header-right-item" onclick="activeMenu">
-                                    <a href="#about"   class="header-right-link">
-                                        <i class="fa-solid fa-user-tie"></i>
-                                        <span class="header-right-list-name">About</span>
-                                    </a>
-                                </li>
-                                <li class="header-right-item" onclick="activeMenu">
-                                    <a href="#skills"  class="header-right-link">
-                                        <i class="fa-solid fa-fan"></i>
-                                        <span class="header-right-list-name">Skills</span>
-                                    </a>
-                                </li>
-                                <li class="header-right-item" onclick="activeMenu">
-                                    <a href="#services"  class="header-right-link">
-                                        <i class="fa-solid fa-bell-concierge"></i>
-                                        <span class="header-right-list-name">servicess</span>
-                                    </a>
-                                </li>
-                                <li class="header-right-item" onclick="activeMenu">
-                                    <a href="#testimonial" class="header-right-link">
-                                        <i class="fa-solid fa-briefcase"></i>
-                                        <span class="header-right-list-name">Work</span>
-                                    </a>
-                                </li>
-                               
-                                <li class="header-right-item" onclick="activeMenu">
-                                    <a href="#index.html" class="header-right-link">
-                                        <i class="fa-regular fa-id-badge"></i>
-                                        <span class="header-right-list-name">Contact</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
+                
                 <!-- == Home Area Start == -->
                 <div class="hero-area my-md" id="">
                     <div class="container">
@@ -184,7 +105,7 @@
                                 </div>
                                 <div class="skills-tools">
 
-                                    <div class="col-md-4 skills-tools-box">
+                                    <div class="col-md-4 skills-tools-box ">
                                         <div class="skills-tools-box-icon"><i class="fa-brands fa-html5"></i></div>
                                         <div class="skills-tools-box-number"><span  class="count">92</span>%</div>
                                     </div>
@@ -236,14 +157,7 @@
                                         <div class="skills-tools-box-icon"><p class="text-amber text-lg">Ai</p></div>
                                         <div class="skills-tools-box-number"><span class="count">75</span>%</div>
                                     </div>
-                                    <div class="col-md-4 skills-tools-box">
-                                        <div class="skills-tools-box-icon"><i class="fa-brands fa-square-js"></i></div>
-                                        <div class="skills-tools-box-number"><span class="count">80</span>%</div>
-                                    </div>
-                                    <div class="col-md-4 skills-tools-box">
-                                        <div class="skills-tools-box-icon"><i class="fa-brands fa-laravel"></i></div>
-                                        <div class="skills-tools-box-number"><span class="count">70</span>%</div>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>

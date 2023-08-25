@@ -139,6 +139,7 @@ ul{
     margin-bottom: 30px;
 }
 
+
 button.slick-next.slick-arrow {
     display: none;
 }
@@ -183,6 +184,22 @@ a.active-menu{
     background-color: #fff;
   }
 
+  .th-border{
+    border-bottom: 2px solid var(--theme-color);
+    border-left: 2px solid var(--theme-color);
+    border-right: 2px solid var(--theme-color-2);
+    border-top: 2px solid var(--theme-color-2);
+}
+
+.th-border:hover{
+    border-radius: 50%;
+    border-bottom: 2px solid var(--theme-color-2);
+    border-left: 2px solid var(--theme-color-2);
+    border-right: 2px solid var(--theme-color);
+    border-top: 2px solid var(--theme-color);
+    transition: .3s;
+}
+
   .container-intro{
     
     padding-right: 15px;
@@ -207,6 +224,7 @@ a.active-menu{
 
 
 @import "utilities";
+@import "component";
 @import "header";
 @import "home";
 @import "about";

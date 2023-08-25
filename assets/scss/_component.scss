@@ -1,0 +1,15 @@
+.th-border{
+    border-bottom: 2px solid var(--theme-color);
+    border-left: 2px solid var(--theme-color);
+    border-right: 2px solid var(--theme-color-2);
+    border-top: 2px solid var(--theme-color-2);
+}
+
+.th-border:hover{
+    border-radius: 50%;
+    border-bottom: 2px solid var(--theme-color-2);
+    border-left: 2px solid var(--theme-color-2);
+    border-right: 2px solid var(--theme-color);
+    border-top: 2px solid var(--theme-color);
+    transition: .3s;
+}
