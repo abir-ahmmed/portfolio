@@ -22,14 +22,36 @@
             <header >
                 <nav class="flex">
                     <!-- Logo -->
-                    <img src="assets/img/A.png" id="" alt="" class="w-30px mx-2 my-2">
+                    <img src="assets/img/A.png" id="" alt="" class="w-30px mx-3 my-3">
     
                     <!-- Mobile Menu -->
-                    <button onclick="navToggle()" class="bg-trans border-0 text-white absolute top-0 right-0 mx-2 my-2"><i class="fa-solid fa-bars"></i></button>
+                    <button onclick="navToggle()" class="bg-trans border-0 text-white absolute top-0 text-lg right-0 mx-3 my-3"><i class="fa-solid fa-bars"></i></button>
 
                 </nav>
 
-                <div class="mobile-header"></div>
+
+
+            </header>
+            <!-- == Header Area End== -->
+        
+            <!-- == Main Area Start == -->
+            <main class="main-area">
+                <!-- Main Menu -->
+                <nav class="mobile-header hidden bg-green flex justify-center absolute bottom-0 z-10 top-0 left-0 right-0" id="toggleMenu">
+                    <!-- Link -->
+                    <ul class="mobile-header-list text-center my-xl">
+                        <li class="py-6"><a class="text-5xl" href="#">Home</a></li>
+                        <li class="py-6"><a class="text-5xl" href="#">Skills</a></li>
+                        <li class="py-6"><a class="text-5xl" href="#">Qualification</a></li>
+                        <li class="py-6"><a class="text-5xl" href="#">Services</a></li>
+                        <li class="py-6"><a class="text-5xl" href="#">Projects</a></li>
+                        <li class="py-6"><a class="text-5xl" href="#">Contact</a></li>
+                    </ul>
+
+                    <!--  Closer -->
+                    <i class="fa-solid fa-xmark text-5xl m-auto flex" onclick="navClose()" id="navClose"></i>
+                   
+                </nav>
                 <div class="conatiner container-intro ">
 
                     <div class="header-left " id="header-left">
@@ -110,13 +132,6 @@
                     </div>
 
                 </div>
-
-            </header>
-            <!-- == Header Area End== -->
-        
-            <!-- == Main Area Start == -->
-            <main class="main-area">
-
                 <!-- == Home Area Start == -->
                 <div class="hero-area my-md" id="">
                     <div class="container">
@@ -156,6 +171,8 @@
                                         <i class="fa-solid fa-fan"></i>
                                         My Skills
                                     </h3>
+
+                                    <h6 class="services-2-text sub-title">A UI/UX Designer & LEAD Web Developer</h6>
                                 </div>
                             </div>
                         </div>
@@ -177,19 +194,19 @@
                                     </div>
                                     <div class="col-md-4 skills-tools-box">
                                         <div class="skills-tools-box-icon"><i class="fa-brands fa-square-js"></i></div>
-                                        <div class="skills-tools-box-number"><span class="count">80</span>%</div>
+                                        <div class="skills-tools-box-number"><span class="count">70</span>%</div>
                                     </div>
                                     <div class="col-md-4 skills-tools-box">
                                         <div class="skills-tools-box-icon"><i class="fa-brands fa-bootstrap"></i></div>
-                                        <div class="skills-tools-box-number"><span class="count">70</span>%</div>
+                                        <div class="skills-tools-box-number"><span class="count">80</span>%</div>
                                     </div>
                                     <div class="col-md-4 skills-tools-box wow animate__pulse">
                                         <div class="skills-tools-box-icon"><i class="fa-brands fa-github"></i></div>
-                                        <div class="skills-tools-box-number"><span class="count">82</span>%</div>
+                                        <div class="skills-tools-box-number"><span class="count">72</span>%</div>
                                     </div>
 
                                     <div class="col-md-4 skills-tools-box">
-                                        <div class="skills-tools-box-icon"><i class="fa-brands fa-react"></i></div>
+                                        <div class="skills-tools-box-icon"><img src="assets/img/icon/tailwind-css-logo-24.png" alt=""></div>
                                         <div class="skills-tools-box-number"><span class="count">75</span>%</div>
                                     </div>
                                 </div> 
@@ -201,20 +218,22 @@
                                     <h6 class="">UI/UX Designer</h6>
                                 </div>
                                 <div class="skills-tools">
-                                    <div class="col-md-4 skills-tools-box wow animate__pulse">
-                                        <div class="skills-tools-box-icon"><i class="fa-brands fa-github"></i></div>
-                                        <div class="skills-tools-box-number"><span class="count">82</span>%</div>
-                                    </div>
                                     <div class="col-md-4 skills-tools-box">
                                         <div class="skills-tools-box-icon"><i class="fa-brands fa-figma"></i></div>
                                         <div class="skills-tools-box-number"><span  class="count">92</span>%</div>
                                     </div>
+
+                                    <div class="col-md-4 skills-tools-box wow animate__pulse">
+                                        <div class="skills-tools-box-icon"> <p class="text-p text-lg">XD</p></div>
+                                        <div class="skills-tools-box-number"><span class="count">82</span>%</div>
+                                    </div>
+                                    
                                     <div class="col-md-4 skills-tools-box">
-                                        <div class="skills-tools-box-icon"><i class="fa-brands fa-wordpress-simple"></i></div>
+                                        <div class="skills-tools-box-icon"><p class="text-b text-lg">Ps</p></div>
                                         <div class="skills-tools-box-number"><span class="count">88</span>%</div>
                                     </div>
                                     <div class="col-md-4 skills-tools-box">
-                                        <div class="skills-tools-box-icon"><i class="fa-brands fa-react"></i></div>
+                                        <div class="skills-tools-box-icon"><p class="text-amber text-lg">Ai</p></div>
                                         <div class="skills-tools-box-number"><span class="count">75</span>%</div>
                                     </div>
                                     <div class="col-md-4 skills-tools-box">

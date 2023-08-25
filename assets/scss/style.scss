@@ -12,6 +12,9 @@
     --dark-color-2:#111111;
     --dark-color-3:#222;
     --dark-color-light:#1f1f1f;
+    --icon-color-p:#ff61f6;
+    --icon-color-b:#2fa3f7;
+
 
 
 
@@ -140,21 +143,6 @@ button.slick-next.slick-arrow {
     display: none;
 }
 
-.slick-next.slick-arrow,
-.slick-prev.slick-arrow{
-    display: none !important;
-}
-
-.skills,
-.services-2,
-.testimonial-2,
-.about-2,
-.intro-area,
-.intro-area-2{
-    display: grid;
-    place-items: center;
-    align-items: center;
-}
 .th-title-3{
     font-size: 16px;
     color: var(--theme-color); 

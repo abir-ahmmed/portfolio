@@ -10,6 +10,20 @@
     background-color: var(--theme-color-2);
 }
 
+
+
+// z index
+
+.z-1{
+    z-index: 1;
+}
+.z-10{
+    z-index: 10;
+}
+.z-100{
+    z-index: 100;
+}
+
 // opacity
 
 .opacity-50{
@@ -32,6 +46,81 @@
 }
 .text-white{
     color: var(--white-color);
+}
+
+.text-p{
+    color: var(--icon-color-p);
+}
+.text-b{
+    color: var(--icon-color-b);
+}
+
+// font size
+
+.text-xs{
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.text-sm{
+    font-size: 14px;
+    line-height: 20px;
+
+}
+.text-base{
+    font-size: 16px;
+    line-height: 24px;
+
+}
+.text-lg{
+    font-size: 18px;
+    line-height: 28px;
+
+}
+.text-xl{
+    font-size: 20px;
+    line-height: 28px;
+
+}
+.text-2xl{
+    font-size: 24px;
+    line-height: 32px;
+
+}
+.text-3xl{
+    font-size: 30px;
+    line-height: 36px;
+
+}
+.text-4xl{
+    font-size: 36px;
+    line-height: 40px;
+
+}
+.text-5xl{
+    font-size: 48px;
+    line-height: 1;
+
+}
+.text-6xl{
+    font-size: 60px;
+    line-height: 1;
+
+}
+.text-7xl{
+    font-size: 72px;
+    line-height: 1;
+
+}
+.text-8xl{
+    font-size: 96px;
+    line-height: 1;
+
+}
+.text-9xl{
+    font-size: 128px;
+    line-height: 1;
+
 }
 
 
@@ -163,8 +252,50 @@
     margin-bottom: 160px;
 }
 
-.mx-auto{
-    margin: auto;
+// Paddin
+.py-1{
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.py-2{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.py-3{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.py-4{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.py-5{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.py-6{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.py-md{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.py-xl{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.py-xxl{
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.px-auto{
+    padding: auto;
 }
 
 .top-0{

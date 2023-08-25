@@ -17,6 +17,13 @@
     width: 60%;
 }
 
+.md-hidden{
+    display: none;
+}
+
+.md-flex{
+    display: flex;
+}
 
 
 
