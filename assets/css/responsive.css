@@ -63,9 +63,7 @@
 
 /* Large */
 @media screen and (min-width: 992px) {
-    .md-hidden{
-        display: none;
-    }
+    
     /* Utilities */
     :root{
 
@@ -87,9 +85,14 @@
         --medium-fw:500;
         --bold-fw:700;
     }
-
-
+    .nav-list{
+        display: flex;
+    }
+    .md-hidden{
+        display: none;
+    }
     /* Header Area */
+
     .header-left{
         max-width: 280px;
         top: 0;
@@ -133,7 +136,12 @@
            
         }
     /* Banner Area */
-    
+    .hero-area-img {
+        width: 60%;
+        margin: 80px auto;
+    }
+
+
     /* Work Area */
     
     /* Services Area */

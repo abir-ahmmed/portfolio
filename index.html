@@ -23,7 +23,17 @@
                 <nav class="mobile-nav  flex">
                     <!-- Logo -->
                     <img  src="assets/img/A.png" id="" alt="" class="w-30px mx-3 my-3">
-    
+
+                    <!-- Main Menu -->
+
+                    <ul class="nav-list hidden  py-3 absolute right-0">
+                        <li class="px-6"><a class="text-base" href="#">Home</a></li>
+                        <li class="px-6"><a class="text-base" href="#">Skills</a></li>
+                        <li class="px-6"><a class="text-base" href="#">Qualification</a></li>
+                        <li class="px-6"><a class="text-base" href="#">Services</a></li>
+                        <li class="px-6"><a class="text-base" href="#">Projects</a></li>
+                        <li class="px-6"><a class="text-base" href="#">Contact</a></li>
+                    </ul>
                     <!-- Mobile Menu -->
                     <button onclick="navToggle()" class="md-hidden bg-trans border-0 text-white absolute top-0 text-lg right-0 mx-3 my-3"><i class="fa-solid fa-bars"></i></button>
 
@@ -37,21 +47,24 @@
             <!-- == Main Area Start == -->
             <main class="main-area">
                 <!-- Main Menu -->
-                <nav class="mobile-header hidden bg-green flex justify-center absolute bottom-0 z-10 top-0 left-0 right-0" id="toggleMenu">
-                    <!-- Link -->
-                    <ul class="mobile-header-list text-center my-xl">
-                        <li class="py-6"><a class="text-5xl" href="#">Home</a></li>
-                        <li class="py-6"><a class="text-5xl" href="#">Skills</a></li>
-                        <li class="py-6"><a class="text-5xl" href="#">Qualification</a></li>
-                        <li class="py-6"><a class="text-5xl" href="#">Services</a></li>
-                        <li class="py-6"><a class="text-5xl" href="#">Projects</a></li>
-                        <li class="py-6"><a class="text-5xl" href="#">Contact</a></li>
-                    </ul>
+                <div class="container-intro">
+                    <nav class="mobile-header hidden bg-green flex justify-center absolute bottom-0 z-10 top-0 left-0 right-0" id="toggleMenu">
+                        <!-- Link -->
+                        <ul class="mobile-header-list text-center my-xl">
+                            <li class="py-6"><a class="text-5xl" href="#">Home</a></li>
+                            <li class="py-6"><a class="text-5xl" href="#">Skills</a></li>
+                            <li class="py-6"><a class="text-5xl" href="#">Qualification</a></li>
+                            <li class="py-6"><a class="text-5xl" href="#">Services</a></li>
+                            <li class="py-6"><a class="text-5xl" href="#">Projects</a></li>
+                            <li class="py-6"><a class="text-5xl" href="#">Contact</a></li>
+                        </ul>
+    
+                        <!--  Closer -->
+                        <i class="fa-solid fa-xmark text-5xl absolute top-0 right-0 my-3 mx-3 flex" onclick="navClose()" id="navClose"></i>
+                       
+                    </nav>
 
-                    <!--  Closer -->
-                    <i class="fa-solid fa-xmark text-5xl absolute top-0 right-0 my-3 mx-3 flex" onclick="navClose()" id="navClose"></i>
-                   
-                </nav>
+                </div>
                 
                 <!-- == Home Area Start == -->
                 <div class="hero-area my-md" id="">
@@ -66,13 +79,13 @@
                                 </div>
                             </div>
                             
-                            <div class="hero-area-icon flex justify-between w-50 mx-auto">
+                            <div class="hero-area-icon mx-auto">
                                 
-                                <a href="https://www.linkedin.com/in/abir-ahmmed/"><i class="fa-brands fa-linkedin"></i></a>
-                                <a href="https://github.com/abir-ahmmed"><i class="fa-brands fa-github"></i></a>
-                                <a href="https://www.facebook.com/devs.abir"><i class="fa-brands fa-facebook"></i></a>
-                                <a href="https://twitter.com/devs_abir"><i class="fa-brands fa-twitter"></i></a>
-                                <a href="https://www.instagram.com/abirahmmedrana/"><i class="fa-brands fa-instagram"></i></a>
+                                <a class="px-3" href="https://www.linkedin.com/in/abir-ahmmed/"><i class="fa-brands fa-linkedin"></i></a>
+                                <a class="px-3" href="https://github.com/abir-ahmmed"><i class="fa-brands fa-github"></i></a>
+                                <a class="px-3" href="https://www.facebook.com/devs.abir"><i class="fa-brands fa-facebook"></i></a>
+                                <a class="px-3" href="https://twitter.com/devs_abir"><i class="fa-brands fa-twitter"></i></a>
+                                <a class="px-3" href="https://www.instagram.com/abirahmmedrana/"><i class="fa-brands fa-instagram"></i></a>
                             </div>
                         </row>
                     </div>
@@ -93,7 +106,7 @@
                                         My Skills
                                     </h3>
 
-                                    <h6 class="services-2-text sub-title">A UI/UX Designer & LEAD Web Developer</h6>
+                                    <h6 class="services-text sub-title">A UI/UX Designer & LEAD Web Developer</h6>
                                 </div>
                             </div>
                         </div>
@@ -224,7 +237,7 @@
                 </section>
                 <!-- == About Area End == -->
                                 <!-- == services Area Start == -->
-                <section class="services-2 scroll-section" id="services">
+                <section class="services scroll-section" id="services">
                                     <div class="container-intro">
                                         <div class="row">
                                             <div class="section-title">
@@ -232,96 +245,42 @@
                                                     <i class="fa-solid fa-bell-concierge"></i>
                                                     Services
                                                 </h6>
-                                                <h6 class="services-2-text sub-title">A UI/UX Designer & LEAD Web Developer</h6>
+                                                <h6 class="services-text sub-title">A UI/UX Designer & LEAD Web Developer</h6>
                                             </div>
                                         </div>
                                         
                                         
                                         <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="services-2-box">
-                                                    <div class="services-2-box-icon">
-                                                        <i class="fa-solid fa-desktop"></i>
+                                            <div class="col">
+                                                <div class="services-box">
+                                                    <div class="services-box-icon bg-green text-2xl py-4 px-3">
+                                                        <i class="fa-solid fa-swatchbook"></i>
                                                     </div>
-                                                    <div class="services-2-box-content">
-                                                        <h5 class="services-2-box-content-title">Unique design</h5>
-                                                        <p class="services-2-box-content-text">
-                                                            I design and develop servicess for customers of all sizes, specializing in creating stylish, modern websites.
+                                                    <div class="services-box-content">
+                                                        <h5 class="services-box-content-title">UI/UX Designer</h5>
+                                                        <p class="services-box-content-text">
+                                                            Service that provides the best quality and at the request of the client, with professional work and customer support.
                                                         </p>
                                                     </div>
                 
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
-                                                <div class="services-2-box">
-                                                    <div class="services-2-box-icon">
-                                                        <i class="fa-regular fa-comment"></i>
+                                            <div class="col">
+                                                <div class="services-box">
+                                                    <div class="services-box-icon bg-green text-2xl py-4">
+                                                        <i class="fa-solid fa-code mx-3"></i>
                                                     </div>
-                                                    <div class="services-2-box-content">
-                                                        <h5 class="services-2-box-content-title">Make it Simple</h5>
-                                                        <p class="services-2-box-content-text">
-                                                            I design and develop servicess for customers of all sizes, specializing in creating stylish, modern websites.
+                                                    <div class="services-box-content">
+                                                        <h5 class="services-box-content-title">Web Developer</h5>
+                                                        <p class="services-box-content-text">
+                                                            I develop services for customers of all sizes, specializing in creating stylish, modern websites.
                                                         </p>
                                                     </div>
                 
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
-                                                <div class="services-2-box">
-                                                    <div class="services-2-box-icon">
-                                                        <i class="fa-solid fa-tags"></i>
-                                                    </div>
-                                                    <div class="services-2-box-content">
-                                                        <h5 class="services-2-box-content-title">Different Layout</h5>
-                                                        <p class="services-2-box-content-text">
-                                                            I design and develop servicess for customers of all sizes, specializing in creating stylish, modern websites.
-                                                        </p>
-                                                    </div>
-                
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="services-2-box">
-                                                    <div class="services-2-box-icon">
-                                                        <i class="fa-solid fa-desktop"></i>
-                                                    </div>
-                                                    <div class="services-2-box-content">
-                                                        <h5 class="services-2-box-content-title">Unique design</h5>
-                                                        <p class="services-2-box-content-text">
-                                                            I design and develop servicess for customers of all sizes, specializing in creating stylish, modern websites.
-                                                        </p>
-                                                    </div>
-                
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="services-2-box">
-                                                    <div class="services-2-box-icon">
-                                                        <i class="fa-regular fa-comment"></i>
-                                                    </div>
-                                                    <div class="services-2-box-content">
-                                                        <h5 class="services-2-box-content-title">Make it Simple</h5>
-                                                        <p class="services-2-box-content-text">
-                                                            I design and develop servicess for customers of all sizes, specializing in creating stylish, modern websites.
-                                                        </p>
-                                                    </div>
-                
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="services-2-box">
-                                                    <div class="services-2-box-icon">
-                                                        <i class="fa-solid fa-tags"></i>
-                                                    </div>
-                                                    <div class="services-2-box-content">
-                                                        <h5 class="services-2-box-content-title">Different Layout</h5>
-                                                        <p class="services-2-box-content-text">
-                                                            I design and develop servicess for customers of all sizes, specializing in creating stylish, modern websites.
-                                                        </p>
-                                                    </div>
-                
-                                                </div>
-                                            </div>
+
+                                           
                 
                                         </div>
                                     </div>
