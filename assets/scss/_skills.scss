@@ -1,7 +1,5 @@
 .skills {
     
-    padding-top: 30px;
-    padding-bottom: 30px;
 
     &-progress{
 
@@ -48,20 +46,23 @@
             display: inline-block;
             padding: 24px;
             border-radius: 48%;
-            border-bottom: 2px solid var(--theme-color);
-            border-left: 2px solid var(--theme-color);
-            border-right: 2px solid var(--theme-color-2);
-            border-top: 2px solid var(--theme-color-2);
+            border-bottom: 2px solid var(--theme-color-2);
+            border-left: 2px solid var(--theme-color-2);
+            border-right: 2px solid var(--theme-color);
+            border-top: 2px solid var(--theme-color);
+
             margin-bottom: 20px;
             margin-right: 20px;
             &-icon{
                 & svg{
                     font-size: 36px;
+                    color: var(--theme-color);
                 }
             }
 
             &-number{
                 font-size: 24px;
+                color: var(--theme-color-2);
             }
 
            
@@ -69,6 +70,12 @@
 
         }
 
+        &-box:hover{
+            border-bottom: 2px solid var(--theme-color);
+            border-left: 2px solid var(--theme-color);
+            border-right: 2px solid var(--theme-color-2);
+            border-top: 2px solid var(--theme-color-2);
+        }
         &-box:hover .skills-tools-box-icon{
          
              color: var(--theme-color-2);

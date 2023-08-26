@@ -1,8 +1,6 @@
 
 .services{
-    padding-top: 80px;
-    padding-bottom: 40px;
-    
+ 
 
     &-box{
         background-color: var(--white-color);
@@ -28,23 +26,17 @@
 
     }
 
-    &-box:hover .services-2-box-icon{
-        color: #000;
-    }
 
-    &-box:hover {
-        background-color: var(--theme-color);
-        color: var(--white-color);
-        margin-top: 15px;
-        margin-bottom: 5px;
-        
-    }
+
+
+   
 }
 
+.skills-tools-box:hover .skills-tools-box-icon svg.svg-inline--fa {
+    color: var(--theme-color-2);
+}
 
 .hidden{
-    // opacity: 0.8;
-    // filter: blur(5px);
      transform: translateX(0);
     transition: all 1s;
 }

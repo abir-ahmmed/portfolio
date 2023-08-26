@@ -232,12 +232,20 @@ a.active-menu {
   color: var(--white-color);
 }
 
+.text-gray {
+  color: var(--gray-color);
+}
+
 .text-p {
   color: var(--icon-color-p);
 }
 
 .text-b {
   color: var(--icon-color-b);
+}
+
+.hover-text-white:hover {
+  color: var(--white-color);
 }
 
 .text-xs {
@@ -430,6 +438,11 @@ a.active-menu {
 }
 
 .my-md {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.my-lg {
   margin-top: 80px;
   margin-bottom: 80px;
 }
@@ -475,6 +488,11 @@ a.active-menu {
 }
 
 .py-md {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.py-lg {
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -569,6 +587,11 @@ a.active-menu {
 .w-30px {
   width: 30px;
   height: 30px;
+}
+
+.w-50px {
+  width: 50px;
+  height: 50px;
 }
 
 .th-border {
@@ -918,10 +941,6 @@ img.intro-img {
   text-align: justify;
 }
 
-.skills {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 .skills-progress-title {
   text-transform: uppercase;
   margin-bottom: 15px;
@@ -959,18 +978,26 @@ img.intro-img {
   display: inline-block;
   padding: 24px;
   border-radius: 48%;
-  border-bottom: 2px solid var(--theme-color);
-  border-left: 2px solid var(--theme-color);
-  border-right: 2px solid var(--theme-color-2);
-  border-top: 2px solid var(--theme-color-2);
+  border-bottom: 2px solid var(--theme-color-2);
+  border-left: 2px solid var(--theme-color-2);
+  border-right: 2px solid var(--theme-color);
+  border-top: 2px solid var(--theme-color);
   margin-bottom: 20px;
   margin-right: 20px;
 }
 .skills-tools-box-icon svg {
   font-size: 36px;
+  color: var(--theme-color);
 }
 .skills-tools-box-number {
   font-size: 24px;
+  color: var(--theme-color-2);
+}
+.skills-tools-box:hover {
+  border-bottom: 2px solid var(--theme-color);
+  border-left: 2px solid var(--theme-color);
+  border-right: 2px solid var(--theme-color-2);
+  border-top: 2px solid var(--theme-color-2);
 }
 .skills-tools-box:hover .skills-tools-box-icon {
   color: var(--theme-color-2);
@@ -979,10 +1006,6 @@ img.intro-img {
   color: var(--theme-color);
 }
 
-.services {
-  padding-top: 80px;
-  padding-bottom: 40px;
-}
 .services-box {
   background-color: var(--white-color);
   color: #000;
@@ -998,14 +1021,9 @@ img.intro-img {
   margin-bottom: 15px;
   color: var(--theme-color);
 }
-.services-box:hover .services-2-box-icon {
-  color: #000;
-}
-.services-box:hover {
-  background-color: var(--theme-color);
-  color: var(--white-color);
-  margin-top: 15px;
-  margin-bottom: 5px;
+
+.skills-tools-box:hover .skills-tools-box-icon svg.svg-inline--fa {
+  color: var(--theme-color-2);
 }
 
 .hidden {
@@ -1118,10 +1136,6 @@ img.intro-img {
   -o-transform: translateZ(50px);
 }
 
-footer .footer-area {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
 footer .footer-area a:hover {
   color: var(--theme-color);
 }
