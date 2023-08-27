@@ -133,6 +133,22 @@
 
 
 // Display
+.block{
+    display: block;
+}
+
+.inline{
+    display: inline;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.grid{
+    display: grid;
+}
+
 .flex{
     display: flex;
 }
@@ -153,14 +169,10 @@
 }
 
 
-// Display
 .hidden{
     display: none;
 }
 
-.d-block{
-    display: block;
-}
 
 // position
 .absolute{
@@ -176,6 +188,11 @@
 .static{
     position: static;
 
+}
+
+// rotate
+.rotate--90{
+    rotate: -90deg;
 }
 
 
@@ -202,6 +219,12 @@
     border-color: var(--theme-color-2);
 }
 
+
+// container
+.container-nav{
+    width: 1600px;
+    margin: 0 auto;
+}
 
 // radius
 .rounded{
@@ -233,7 +256,7 @@
     border-radius: 50%;
 }
 .rounded-medium{
-    
+    border-radius: 50px;
 }
 
 //  Margin
@@ -311,10 +334,14 @@
     padding-bottom: 80px;
 }
 .py-xl{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.py-2xl{
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.py-xxl{
+.py-3xl{
     padding-top: 160px;
     padding-bottom: 160px;
 }
@@ -364,6 +391,11 @@
 .px-auto{
     padding: auto;
 }
+
+.pyx4{
+    padding: 6px 24px;
+}
+
 
 .top-0{
     top: 0;

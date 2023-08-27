@@ -137,7 +137,7 @@
         }
     /* Banner Area */
     .hero-area-img {
-        width: 60%;
+        width: 100%;
         margin: 80px auto;
     }
 
@@ -198,7 +198,10 @@
         --bold-fw:700;
     }
     
-
+    .hero-area-img {
+        width: 70%;
+        
+    }
     /*About area*/
 
 

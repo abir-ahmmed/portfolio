@@ -161,22 +161,6 @@ a.active-menu {
   background-color: #fff;
 }
 
-.th-border {
-  border-bottom: 2px solid var(--theme-color);
-  border-left: 2px solid var(--theme-color);
-  border-right: 2px solid var(--theme-color-2);
-  border-top: 2px solid var(--theme-color-2);
-}
-
-.th-border:hover {
-  border-radius: 50%;
-  border-bottom: 2px solid var(--theme-color-2);
-  border-left: 2px solid var(--theme-color-2);
-  border-right: 2px solid var(--theme-color);
-  border-top: 2px solid var(--theme-color);
-  transition: 0.3s;
-}
-
 .container-intro {
   padding-right: 15px;
   padding-left: 15px;
@@ -313,6 +297,22 @@ a.active-menu {
   line-height: 1;
 }
 
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.grid {
+  display: grid;
+}
+
 .flex {
   display: flex;
 }
@@ -337,10 +337,6 @@ a.active-menu {
   display: none;
 }
 
-.d-block {
-  display: block;
-}
-
 .absolute {
   position: absolute;
 }
@@ -355,6 +351,10 @@ a.active-menu {
 
 .static {
   position: static;
+}
+
+.rotate--90 {
+  rotate: -90deg;
 }
 
 .border-0 {
@@ -379,6 +379,11 @@ a.active-menu {
 
 .border-secondary {
   border-color: var(--theme-color-2);
+}
+
+.container-nav {
+  width: 1600px;
+  margin: 0 auto;
 }
 
 .rounded {
@@ -415,6 +420,10 @@ a.active-menu {
 
 .rounded-full {
   border-radius: 50%;
+}
+
+.rounded-medium {
+  border-radius: 50px;
 }
 
 .my-1 {
@@ -498,11 +507,16 @@ a.active-menu {
 }
 
 .py-xl {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.py-2xl {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
-.py-xxl {
+.py-3xl {
   padding-top: 160px;
   padding-bottom: 160px;
 }
@@ -556,6 +570,10 @@ a.active-menu {
   padding: auto;
 }
 
+.pyx4 {
+  padding: 6px 24px;
+}
+
 .top-0 {
   top: 0;
 }
@@ -602,12 +620,10 @@ a.active-menu {
 }
 
 .th-border:hover {
-  border-radius: 50%;
   border-bottom: 2px solid var(--theme-color-2);
   border-left: 2px solid var(--theme-color-2);
   border-right: 2px solid var(--theme-color);
   border-top: 2px solid var(--theme-color);
-  transition: 0.3s;
 }
 
 .header-left {
@@ -936,7 +952,6 @@ img.intro-img {
   width: 80%;
   line-height: 24px;
   letter-spacing: 2px;
-  margin-top: 30px;
   font-weight: 400;
   text-align: justify;
 }
