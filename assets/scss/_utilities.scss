@@ -131,6 +131,11 @@
 }
 
 
+// float
+.float-right{
+    float: right;
+}
+
 
 // Display
 .block{
@@ -188,6 +193,32 @@
 .static{
     position: static;
 
+}
+
+.sticky{
+    position: sticky;
+}
+
+.top-0{
+    top: 0;
+}
+.left-0{
+    left: 0;
+}
+.bottom-0{
+    bottom: 0;
+}
+.right-0{
+    right: 0;
+}
+.right-md{
+    right: 10%;
+}
+.right--md{
+    right: -10%;
+}
+.left--md{
+    left: -10%;
 }
 
 // rotate
@@ -260,7 +291,9 @@
 }
 
 //  Margin
-
+.m-0{
+    margin: 0;
+}
 .my-1{
     margin-top: 4px;
     margin-bottom: 4px;
@@ -296,7 +329,10 @@
     margin-bottom: 160px;
 }
 
-// Paddin
+// Padding
+.p-0{
+    padding: 0;
+}
 .py-1{
     padding-top: 4px;
     padding-bottom: 4px;
@@ -397,18 +433,8 @@
 }
 
 
-.top-0{
-    top: 0;
-}
-.left-0{
-    left: 0;
-}
-.bottom-0{
-    bottom: 0;
-}
-.right-0{
-    right: 0;
-}
+
+
 
 .hover:amber{
     color: var(--theme-color-2);

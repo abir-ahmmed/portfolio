@@ -19,28 +19,36 @@
     <div class="relative">
         
             <!-- == Header Area Start == -->
-            <header >
-                <div class="container-nav">
-                    <nav class="mobile-nav  flex">
-                        <!-- Logo -->
-                        <img  src="assets/img/A.png" id="" alt="" class="w-50px mx-3 my-3 fixed">
-    
-                        <!-- Main Menu -->
-    
-                        <ul class="nav-list hidden  py-3 absolute right-0">
-                            <li class="px-6"><a class="text-base" href="#">Home</a></li>
-                            <li class="px-6"><a class="text-base" href="#">Skills</a></li>
-                            <li class="px-6"><a class="text-base" href="#">Qualification</a></li>
-                            <li class="px-6"><a class="text-base" href="#">Services</a></li>
-                            <li class="px-6"><a class="text-base" href="#">Projects</a></li>
-                            <li class="px-6"><a class="text-base" href="#">Contact</a></li>
-                        </ul>
-                        <!-- Mobile Menu -->
-                        <button onclick="navToggle()" class="md-hidden bg-trans border-0 text-white fixed top-0 text-5xl right-0 mx-3 my-3"><i class="fa-solid fa-bars"></i></button>
-    
-                    </nav>
+            <header>
+                
+                <nav class="mobile-nav">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-2">
 
-                </div>
+                                <p class="logo mx-3 text-md"><span class="l-font text-lg">A</span>bir</p>
+                            </div>
+                            <div class="col-10">
+                                <!-- Main Menu -->
+            
+                                <ul class="nav-list hidden flex float-right  p-0 m-0">
+                                    <li class="px-3"><a class="text-base" href="#">Home</a></li>
+                                    <li class="px-3"><a class="text-base" href="#">Skills</a></li>
+                                    <li class="px-3"><a class="text-base" href="#">Qualification</a></li>
+                                    <li class="px-3"><a class="text-base" href="#">Services</a></li>
+                                    <li class="px-3"><a class="text-base" href="#">Projects</a></li>
+                                    <li class="px-3"><a class="text-base" href="#">Contact</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Logo -->
+
+                    <!-- Mobile Menu -->
+                    <button onclick="navToggle()" class="md-hidden bg-trans border-0 text-white fixed top-0 text-5xl right-0 mx-3 my-3"><i class="fa-solid fa-bars"></i></button>
+
+                </nav>
 
 
 
@@ -51,45 +59,48 @@
             <main class="main-area">
                 <!-- Main Menu -->
                 <div class="container">
-                    <nav class="mobile-header hidden bg-green flex justify-center fixed bottom-0 z-10 top-0 left-0 right-0" id="toggleMenu">
-                        <!-- Link -->
-                        <ul class="mobile-header-list text-center my-xl">
-                            <li class="py-6"><a class="text-5xl" href="#">Home</a></li>
-                            <li class="py-6"><a class="text-5xl" href="#">Skills</a></li>
-                            <li class="py-6"><a class="text-5xl" href="#">Qualification</a></li>
-                            <li class="py-6"><a class="text-5xl" href="#">Services</a></li>
-                            <li class="py-6"><a class="text-5xl" href="#">Projects</a></li>
-                            <li class="py-6"><a class="text-5xl" href="#">Contact</a></li>
-                        </ul>
-    
-                        <!--  Closer -->
-                        <i class="fa-solid fa-xmark text-5xl absolute top-0 right-0 my-3 mx-3 flex" onclick="navClose()" id="navClose"></i>
-                       
-                    </nav>
+                    <div class="row">
+                        
+                        <nav class="mobile-header hidden bg-green flex justify-center fixed bottom-0 z-10 top-0 left-0 right-0" id="toggleMenu">
+                            <!-- Link -->
+                            <ul class="mobile-header-list text-center my-xl">
+                                <li class="py-6"><a class="text-5xl" href="#">Home</a></li>
+                                <li class="py-6"><a class="text-5xl" href="#">Skills</a></li>
+                                <li class="py-6"><a class="text-5xl" href="#">Qualification</a></li>
+                                <li class="py-6"><a class="text-5xl" href="#">Services</a></li>
+                                <li class="py-6"><a class="text-5xl" href="#">Projects</a></li>
+                                <li class="py-6"><a class="text-5xl" href="#">Contact</a></li>
+                            </ul>
+        
+                            <!--  Closer -->
+                            <i class="fa-solid fa-xmark text-5xl absolute top-0 right-0 my-3 mx-3 flex" onclick="navClose()" id="navClose"></i>
+                           
+                        </nav>
+                    </div>
 
                 </div>
                 
                 <!-- == Home Area Start == -->
                 <div class="hero-area my-md" id="">
-                    <div class="container">
+                    <div class="container-intro">
                         <row class="col text-center">
                             <h1 class="">Hi, I'm <span class="text-green">Abir Ahmmed</span> </h1>
                             <h2 class="">Frontend Developer</h2>
                             <h2 class=""> <span class="text-green">&</span>  UI/UX Designer</h2>
-                            <div class="hero-area-img my-4">
+                            <div class="hero-area-img relative my-4">
                                 <div class="hero-area-shape w-50 md-w-60  bg-green m-auto items-center">
                                     <img class="w-100" src="assets/img/abir.png" alt="">
                                 </div>
+                                <div class="hero-area-icon absolute rotate--90 bottom-0  left--md py-xl">
+                                    
+                                    <a class="px-3" href="https://www.linkedin.com/in/abir-ahmmed/"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a class="px-3" href="https://github.com/abir-ahmmed"><i class="fa-brands fa-github"></i></a>
+                                    <a class="px-3" href="https://www.facebook.com/devs.abir"><i class="fa-brands fa-facebook"></i></a>
+                                    <a class="px-3" href="https://twitter.com/devs_abir"><i class="fa-brands fa-twitter"></i></a>
+                                    <a class="px-3" href="https://www.instagram.com/abirahmmedrana/"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
                             </div>
                             
-                            <div class="hero-area-icon absolute rotate--90 bottom-0 left-0 py-xl">
-                                
-                                <a class="px-3" href="https://www.linkedin.com/in/abir-ahmmed/"><i class="fa-brands fa-linkedin"></i></a>
-                                <a class="px-3" href="https://github.com/abir-ahmmed"><i class="fa-brands fa-github"></i></a>
-                                <a class="px-3" href="https://www.facebook.com/devs.abir"><i class="fa-brands fa-facebook"></i></a>
-                                <a class="px-3" href="https://twitter.com/devs_abir"><i class="fa-brands fa-twitter"></i></a>
-                                <a class="px-3" href="https://www.instagram.com/abirahmmedrana/"><i class="fa-brands fa-instagram"></i></a>
-                            </div>
                         </row>
                     </div>
                 </div>
@@ -99,7 +110,7 @@
 
                 <!-- == About Area Start == -->
                 <section class="about-2 py-md scroll-section" id="about">
-                    <div class="container">
+                    <div class="container-intro">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="section-title">
@@ -145,7 +156,7 @@
                                         designer
                                     </h6>
 
-                                    <p>
+                                    <p class="my-3">
                                         I design and develop servicess for customers of all sizes, specializing in creating stylish, modern websites, web servicess and online stores. My passion is to design digital user experiences through the bold interface and meaningful interactions. Check out my header-2folio
 
                                     </p>
@@ -173,7 +184,7 @@
 
                 <!-- == Skills Area Start == -->
                 <section class="skills scroll-section" id="skills">
-                    <div class="container">
+                    <div class="container-intro">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="section-title">
@@ -261,7 +272,7 @@
 
                 <!-- == services Area Start == -->
                 <section class="services py-md" id="services">
-                    <div class="container ">
+                    <div class="container-intro ">
                                         <div class="row">
                                             <div class="section-title">
                                                 <h6 class="th-title-3">
@@ -312,10 +323,10 @@
 
                 <!-- == Feature Project Area Start == -->
                 <section class="project scroll-section" id="project">
-                    <div class="container">
+                    <div class="container-intro">
                         <div class="row">
                             <div class="col-4">
-                                <div class="section-tit text-centerle">
+                                <div class="section-title text-centerle">
                                     <h3 class="text-base text-amber inline-block pyx4 th-border th-border:hover rounded-medium">
                                         <i class="fa-solid fa-fan"></i>
                                         Project
@@ -327,9 +338,8 @@
                             <h6 class="text-center my-4 sub-title"> Web Development Project</h6>
           
                             <div class="col-4">
-                                <div class="project-box my-3 py-2 th-border rounded-md text-center ">
-                                    
-                                    <div class="content grid">
+                                <div class="project-box project-box-1 my-3 th-border rounded-md text-center ">
+                                    <div class="project-box-content py-4 grid ">
                                         <a href="https://landpagy-html5.netlify.app/">landpagy</a>
                                         <a href="https://github.com/abir-ahmmed/landpagy">github</a>
                                         <a href="">codepen</a>
@@ -337,45 +347,59 @@
                                 </div>
                             </div>
                             <div class="col-4">
-                                <div class="project-box my-3 py-2 th-border rounded-md text-center grid">
-                                    <a href="https://fundo-html.netlify.app/">fundo</a>
-                                    <a href="https://github.com/abir-ahmmed/fundo">github</a>
-                                    <a href="">codepen</a>
+                                <div class="project-box project-box-2 my-3 th-border rounded-md text-center ">
+                                    <div class="project-box-content py-4 grid">
+                                        <a href="https://fundo-html.netlify.app/">fundo</a>
+                                        <a href="https://github.com/abir-ahmmed/fundo">github</a>
+                                        <a href="">codepen</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="project-box project-box-3 my-3  th-border rounded-md text-center">
+                                    <div class="project-box-content py-4 grid">
+                                        <a href="https://chris-html.netlify.app/">Chris</a>
+                                        <a href="https://github.com/abir-ahmmed/chris-portfolio-html">github</a>
+                                        <a href="">codepen</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="project-box project-box-4 my-3 th-border rounded-md text-center grid">
+                                    <div class="project-box-content py-4 grid">
+                                        <a href="https://holux-html.netlify.app/">Holux</a>
+                                        <a href="https://github.com/abir-ahmmed/holux-html">github</a>
+                                        <a href="">codepen</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-4">
-                                <div class="project-box my-3 py-2 th-border rounded-md text-center grid">
-                                    <a href="https://chris-html.netlify.app/">Chris</a>
-                                    <a href="https://github.com/abir-ahmmed/chris-portfolio-html">github</a>
-                                    <a href="">codepen</a>
+                                <div class="project-box project-box-5 my-3 th-border rounded-md text-center grid">
+                                    <div class="project-box-content py-4 grid">
+                                        <a href="https://sushi-html.netlify.app/">Sushi </a>
+                                        <a href="https://github.com/abir-ahmmed/sushi-html">github</a>
+                                        <a href="">codepen</a>                                
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-4">
-                                <div class="project-box my-3 py-2 th-border rounded-md text-center grid">
-                                    <a href="https://holux-html.netlify.app/">Holux</a>
-                                    <a href="https://github.com/abir-ahmmed/holux-html">github</a>
-                                    <a href="">codepen</a>
+                                <div class="project-box project-box-6 my-3 th-border rounded-md text-center grid ">
+                                    <div class="project-box-content py-4 grid">
+                                        <a href="">Bikroy </a>
+                                        <a href="">github</a>
+                                        <a href="https://codepen.io/abir-ahmmed/pen/WNaqVdx">codepen</a>                                
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-4">
-                                <div class="project-box my-3 py-2 th-border rounded-md text-center grid">
-                                    <a href="https://sushi-html.netlify.app/">Sushi </a>
-                                    <a href="https://github.com/abir-ahmmed/sushi-html">github</a>
-                                    <a href="">codepen</a>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="project-box my-3 py-2 th-border rounded-md text-center grid ">
-                                    <a href="">Bikroy </a>
-                                    <a href="">github</a>
-                                    <a href="https://codepen.io/abir-ahmmed/pen/WNaqVdx">codepen</a>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="project-box my-3 py-2 th-border rounded-md text-center grid">
-                                    <a href="https://juice-html.netlify.app/">juice </a>
-                                    <a href="https://github.com/abir-ahmmed/juice-html">github</a>
-                                    <a href="">codepen</a>
+                                <div class="project-box project-box-7 my-3 th-border rounded-md text-center grid">
+                                    <div class="project-box-content py-4 grid">
+                                        <a href="https://juice-html.netlify.app/">juice </a>
+                                        <a href="https://github.com/abir-ahmmed/juice-html">github</a>
+                                        <a href="">codepen</a>                                
+                                    </div>
                                 </div>
                             </div>
 
@@ -401,7 +425,7 @@
             <!-- == Footer Area Start == -->
             <footer>
                 <section class="footer-area">
-                    <div class="container container">
+                    <div class="container-intro container-intro">
                         <div class="row">
                                 <div class="footer-area-top">
                                 <div class="col-md-3 col-6">

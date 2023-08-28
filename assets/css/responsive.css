@@ -103,12 +103,8 @@
         left: 30px;
     }
 
-    .header-left-box-content-title{
-        font-size: var(--h4-fs);
-        color: var(--white-color);
-    }
-    .header-left-box-content-subtitle{
-        font-size: var(--h5-fs);
+    .hero-area{
+        padding-top: 80px;
     }
 
           .intro-img-shape{
@@ -238,10 +234,7 @@
 
 
     /* Header-Area*/
-    .header-left{
-        display: flex;
-        position: fixed;
-    }
+    
     /* Services Area */
 
 
