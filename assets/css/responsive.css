@@ -140,6 +140,8 @@
 
     /* Work Area */
     
+
+   
     /* Services Area */
     .services-area-2 a {
         font-size: 40px;
@@ -151,6 +153,10 @@
         font-size: 30px;
     }
 
+    .project-box-content a{
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
     /*Process Area*/
     
     /*About Area*/
@@ -199,6 +205,22 @@
         
     }
     /*About area*/
+
+     /* Skills */
+     .skills-tools-box {
+        padding: 48px;
+      }
+      .skills-tools-box-icon img{
+        width: 50px;
+        margin-bottom: 20px;
+      }
+      .skills-tools-box-icon svg {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+      .skills-tools-box-number {
+        font-size: 48px;
+      }
 
 
     /*Portfolio area*/

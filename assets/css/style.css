@@ -2,7 +2,8 @@
 :root {
   --theme-color:#D9832E;
   --theme-color-2:#24E98C;
-  --theme-color-3:#124F33;
+  --theme-color-3:#014421;
+  --theme-color-4:#124F33;
   --white-color:#fff;
   --gray-light-color:#EAEDF2;
   --gray-color:#616161;
@@ -184,7 +185,11 @@ a.active-menu {
   background-color: var(--theme-color-2);
 }
 
-.z-1 {
+.bg-forest {
+  background-color: var(--theme-color-3);
+}
+
+forest .z-1 {
   z-index: 1;
 }
 
@@ -299,6 +304,14 @@ a.active-menu {
 .text-9xl {
   font-size: 128px;
   line-height: 1;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .float-right {
@@ -630,6 +643,18 @@ a.active-menu {
   color: var(--theme-color);
 }
 
+.h-z-100:hover {
+  z-index: 100;
+}
+
+.hover-bg {
+  display: none;
+}
+
+.hover-bg:hover {
+  display: block;
+}
+
 .w-20px {
   width: 20px;
 }
@@ -799,23 +824,6 @@ img.intro-img {
   border: rotate(30deg);
 }
 
-.home-area-3 {
-  display: inline-block;
-  transform: translateY(200px);
-}
-.home-area-3 .ball {
-  background: #FFFFFF;
-  width: 10px;
-  height: 10px;
-  position: relative;
-  top: 45px;
-  left: 10px;
-}
-
-.hero-area-icon {
-  width: 50%;
-}
-
 .about-2 {
   display: flex;
   align-items: center;
@@ -898,7 +906,7 @@ img.intro-img {
   border: 2px solid var(--theme-color-2);
   display: inline-block;
   padding: 24px;
-  border-radius: 48%;
+  border-radius: 50%;
   border-bottom: 2px solid var(--theme-color-2);
   border-left: 2px solid var(--theme-color-2);
   border-right: 2px solid var(--theme-color);
@@ -1026,6 +1034,12 @@ img.intro-img {
 
 .project-box-7 {
   background-image: url(/assets/img/web/juice.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-box-8 {
+  background-image: url(/assets/img/UI/UI\ Behance.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
